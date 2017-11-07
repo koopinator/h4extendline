@@ -1,0 +1,22 @@
+state={
+	id=782
+	name="STATE_782"
+	history={
+		owner = TNZ
+		1936.1.1 = {
+			owner = BEL
+
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	provinces={
+		2220 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

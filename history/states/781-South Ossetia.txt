@@ -1,0 +1,50 @@
+state={
+	id=781
+	name="STATE_781"
+	history={
+		owner = RUS
+		add_core_of = RUS
+		add_core_of = OSS
+		1936.1.1 = {
+			owner = SOV
+			add_core_of = SOV
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+				air_base = 3
+				3653 = {
+					naval_base = 2
+					coastal_bunker = 1
+
+				}
+
+			}
+
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+
+			}
+
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
+
+		}
+
+	}
+	provinces={
+		6671 
+	}
+	manpower=40000
+	buildings_max_level_factor=1.000
+	state_category=town
+
+}

@@ -1,0 +1,242 @@
+﻿###########################
+# Persian Events
+###########################
+
+add_namespace = persia
+
+country_event = { #Russia is asked if they want to invade persia
+	id = persia.1
+	title = persia.1.t
+	desc = persia.1.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1911.12.01
+		tag = RUS
+		RUS = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#We should not meddle in persian affairs
+		name = persia.1.o1
+		ai_chance = { factor = 15 }
+	}
+	option = {	#Death to the persian revolution
+		name = persia.1.o2
+		PER = { country_event = { days = 1 id = persia.2 } }
+		ai_chance = { factor = 85 }
+	}
+}
+
+country_event = { #Ultimatum to Persia
+	id = persia.2
+	title = persia.2.t
+	desc = persia.2.d
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PER
+		RUS = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#Long live the shah!
+		name = persia.2.o1
+		add_popularity = { ideology = neutrality popularity = 0.3 }
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		ai_chance = { factor = 15 }
+	}
+	option = {	#Death to Russian imperialism!
+		name = persia.2.o2
+		RUS = { declare_war_on = { target = PER } }
+		ai_chance = { factor = 85 }
+	}
+}
+
+country_event = { #Russia requests your surrender
+	id = persia.3
+	title = persia.3.t
+	desc = persia.3.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		RUS = { has_war_with = PER }
+		RUS = { NOT = { has_war_with = GER }  }
+		PER = { surrender_progress > 0.30 }
+	}
+	
+	option = {	#The war is over
+		name = persia.3.o1
+		RUS  = { transfer_state = 419 }
+		add_popularity = { ideology = neutrality popularity = 0.3 }
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		white_peace = RUS
+		PER = { country_event = { days = 1111 id = persia.5 } }
+	}
+}
+
+country_event = { #Russia requests peace
+	id = persia.4
+	title = persia.4.t
+	desc = persia.4.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		RUS = { has_war_with = PER }
+		RUS = { NOT = { has_war_with = GER }  }
+		date > 1912.06.01
+	}
+	
+	option = {	#The war is over
+		name = persia.4.o1
+		white_peace = RUS
+	}
+}
+
+
+country_event = { #Persian civil war - https://en.wikipedia.org/wiki/Jungle_Movement_of_Gilan
+	id = persia.5
+	title = persia.5.t
+	desc = persia.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+	}
+	
+	option = {	#Death to the Revolution!
+		name = persia.5.o1
+				start_civil_war = {
+				ruling_party = neutrality
+				ideology = democratic
+				size = 0.5
+				states = { 420  }
+			}
+	}
+}
+
+country_event = { #Soviet union gives back Tabriz in order to start communist revolution
+	id = persia.6
+	title = persia.6.t
+	desc = persia.6.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		date > 1920.5.01
+		SOV = { controls_state = 419 }
+	}
+	
+	option = {	#Let's give back tabriz
+		name = persia.6.o1
+		PER = { add_popularity = { ideology = communism popularity = 0.3 } }
+		PER  = { transfer_state = 419 }
+		PER = { country_event = { days = 30 id = persia.7 } }
+			}
+	}
+
+country_event = { #Persian civil war - Communist vs Capitalist - https://en.wikipedia.org/wiki/Persian_Socialist_Soviet_Republic
+
+	id = persia.7
+	title = persia.7.t
+	desc = persia.7.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = PER
+	}
+	
+	option = {	#Death to the Revolution!
+		name = persia.7.o1
+				start_civil_war = {
+				ideology = communism
+				size = 0.3
+				states = { 419 420 }
+			}
+	}
+}
+
+country_event = { #Persian shah receives tabriz as help to fight persian constitutionalists
+
+	id = persia.8
+	title = persia.8.t
+	desc = persia.8.d
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = PER
+		RUS = { NOT = { has_war_with = TUR }  }
+		date > 1917.3.01
+		RUS = { controls_state = 419 }
+		PER = { has_civil_war = yes }
+		has_government = neutrality
+	}
+	
+	option = {	#Good idea
+		name = persia.8.o1
+		transfer_state = 419
+	}
+}
+
+country_event = { #Russia will return tabriz if the shah is to be restored - This will later cause another civil war in persia
+
+	id = persia.9
+	title = persia.9.t
+	desc = persia.9.d
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = PER
+		RUS = { NOT = { has_war_with = TUR }  }
+		date > 1917.3.01
+		RUS = { controls_state = 419 }
+		PER = { has_civil_war = yes }
+		PER = { has_government = democratic }
+	}
+	
+	option = {	#Long live the shah!
+		name = persia.9.o1
+		transfer_state = 419
+		add_popularity = { ideology = neutrality popularity = 0.6 }
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		ai_chance = { factor = 100 }
+		PER = { country_event = { days = 30 id = persia.10 } }
+	}
+
+	option = {	#Never
+		name = persia.9.o1
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #Constitutionalists start new civil war
+
+	id = persia.10
+	title = persia.10.t
+	desc = persia.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		original_tag = PER
+	}
+	
+	option = {	#The war has begun
+		name = persia.10.o1
+
+				start_civil_war = {
+				ruling_party = neutrality
+				ideology = democratic
+				size = 0.7
+			}
+	}
+}
+
+
+

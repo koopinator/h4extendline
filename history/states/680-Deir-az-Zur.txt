@@ -1,0 +1,35 @@
+
+state={
+	id=680
+	name="STATE_680"
+	resources={
+		wood=0.000
+	}
+
+	history={
+		owner = TUR
+		add_core_of = SYR
+		add_core_of = TUR
+		1936.1.1 = {
+			owner = FRA
+			add_core_of = SYR
+			buildings = {
+				infrastructure = 2
+
+			}
+
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		901 2013 3942 7513 10383 12316 12442 
+	}
+	manpower=324110
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

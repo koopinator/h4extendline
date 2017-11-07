@@ -1,0 +1,30 @@
+state={
+	id=783
+	name="STATE_783"
+	provinces={
+		1479 1614 10395 10435 12324 
+	}
+
+	history={
+		owner = KHV
+		add_core_of = RUS
+		1936.1.1 = {
+			owner = SOV
+			add_core_of = SOV
+			buildings = {
+				infrastructure = 3
+
+			}
+
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+	
+	manpower=550000
+
+	buildings_max_level_factor=1.000
+}

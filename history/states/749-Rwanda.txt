@@ -1,0 +1,28 @@
+
+state={
+	id=749
+	name="STATE_749"
+	resources={
+		wood=0.000
+	}
+
+	history={
+		owner = TNZ
+		1936.1.1 = {
+			owner = BEL
+
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		9962 
+	}
+	manpower=2826000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

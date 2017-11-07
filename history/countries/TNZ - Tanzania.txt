@@ -1,0 +1,120 @@
+﻿capital = 546
+
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.90
+
+	set_cosmetic_tag = TNZ_german
+
+	
+create_country_leader = {
+	name = "Heinrich Schnee"
+	picture = "gfx/leaders/TNZ/country_leaders/GER_heinrich_schnee.dds"
+	expire = "1949.6.23"
+	ideology = despotism
+	traits = {
+		silent_workhorse
+	}
+}
+
+create_corps_commander={  name = "von Lettow-Vorbeck" id=98904 portrait_path="gfx/leaders/TNZ/army_generals/GER_von_lettow_vorbeck.dds" traits={ swamp_fox } skill=4 }
+create_navy_leader={  name = "Max Looff" id=40044 portrait_path="gfx/leaders/navy_admirals/GER_max_loof.dds" traits={ superior_tactician  } skill=4 }
+
+1910.1.1 = {
+	oob = "TNZ_1910"
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		ww1infantry_weapons1 = 1
+		ww1_infantry_equip1 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		infantry_binoculars = 1
+		infantry_grenade = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+		tech_mountaineers = 1
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+
+		# Armor
+		gwtank=1 # 1910 Armored Car
+		ww1_armored_car_2 = 1
+
+		# Artillery
+		light_field_gun1 = 1
+		bonus_artillery1 = 1
+		heavy_field_gun1 = 1
+		bonus_bertha1 = 1
+
+		# Land Doctrine
+		ww1_landdoctrine = 1
+		ww1_directfire = 1
+
+		# Navy
+		transport = 1
+
+		# Air
+		ww1_fighter1 = 1
+		ww1_fighter1b = 1
+
+		# Air Doctrine
+		ww1_airdoctrine = 1
+		ww1_airdoctrine_2 = 1
+		ww1_airdoctrine_3 = 1
+
+		# Navy Doctrine
+		ww1_navaldoctrine = 1
+		ww1_navaldoctrine_2 = 1
+		ww1_navaldoctrine_3 = 1
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+		mechanical_computing = 1
+		chemical_research = 1
+		tank_unlocker1 = 1
+		radio = 1
+		supertech1 = 1
+		tankaircraft1 = 1
+		torpedotech1 = 1
+
+		# Industry
+		ww1_tools1 = 1
+		ww1_medicine1 = 1
+		ww1_fortification1 = 1
+		ww1_fortification2 = 1
+
+	}
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 0
+		}
+		fascism = {
+			popularity = 0
+		}
+		communism = {
+			popularity = 0
+		}
+		neutrality = {
+			popularity = 100
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1910.10.25"
+	election_frequency = 60
+	elections_allowed = no
+}
+}

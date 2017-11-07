@@ -1,0 +1,71 @@
+﻿capital = 215
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_research_slots = 3
+set_national_unity = 0.75
+set_convoys = 20
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+
+
+1910.1.1 = {
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+
+		# Navy
+		ww1_destroyer0 = 1
+		ww1_destroyer1 = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser0 = 1
+		ww1_battlecruiser0 = 1
+		ww1_battleship0 = 1
+		ww1_submarine1 = 1
+		ww1_coastal_submarine1 = 1
+		transport = 1
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+	}
+
+	set_politics={  parties={ democratic={ popularity=80  }  neutrality={ popularity=10 }  communism={ popularity=10  } }  ruling_party=neutrality last_election="1910.1.15" election_frequency=60 elections_allowed=yes }
+
+	add_ideas = {
+
+	}	
+}

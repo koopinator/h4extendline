@@ -1,0 +1,34 @@
+state={
+	id=779
+	name="STATE_779"
+		resources={
+		wood=0.000
+	}
+
+	history={
+		owner = TUR
+		add_core_of = SYR
+		add_core_of = TUR
+		1936.1.1 = {
+			owner = FRA
+			add_core_of = SYR
+			buildings = {
+				infrastructure = 2
+
+			}
+
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1549 1578 1606 1634 6883 10882 
+	}
+	manpower=324110
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

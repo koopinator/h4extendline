@@ -1,0 +1,55 @@
+﻿capital = 233
+
+set_research_slots = 4
+set_convoys = 500
+set_national_unity = 0.75
+
+set_technology = {
+	light_field_gun1=1
+	 
+	heavy_field_gun1=1
+	motorised_infantry = 1
+	electronic_mechanical_engineering=1
+	infantry_weapons=1
+	ww1_destroyer0=1
+	ww1_destroyer1=1
+	#KiS=1
+	#KiS=1
+	 
+	#KiS early_protected_cruiser=1
+	ww1_light_cruiser1=1
+	ww1_light_cruiser0=1
+
+	ww1_battleship0=1
+	ww1_battleship1=1
+	#early_dreadnought=1
+	transport=1
+	ww1_submarine1=1 ww1_coastal_submarine1=1
+	ww1_submarine2=1 ww1_coastal_submarine2=1
+	tech_support=1
+	tech_engineers=1
+	tech_recon=1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 80
+		}
+		fascism = {
+			popularity = 0
+		}
+		communism = {
+			popularity = 20
+		}
+		neutrality = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1910.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}

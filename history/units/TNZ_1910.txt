@@ -1,0 +1,158 @@
+﻿
+###################################################################
+
+division_template = {
+	name = "Deutsches Askari"	# Infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Stoßtruppen Division"		# Elite
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 3 }
+		artillery = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Schutztruppe Division"		# Special
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }		
+	}
+}
+
+division_template = {
+	name = "Gebirgsjäger Division"		# Mountain Division
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+   		engineer = { x = 0 y = 1 }
+        logistics_company = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Ersatz Division"	# Militia
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Hussars"		# Cavalry
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+    name = "Straßenpanzerwagen"
+
+    regiments = {
+        armored_car = { x = 0 y = 0 }
+        armored_car = { x = 0 y = 1 }       
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+    }
+
+    support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+}
+
+###################################################################
+
+units = {
+    division = {
+        name = "Ostafrikanische Schutztruppe 1-10"
+        location = 2196#Dar es Salaam
+        division_template = "Schutztruppe Division"
+        start_experience_factor = 0.15
+        # start_equipment_factor = 0.3
+        # start_manpower_factor = 0.3
+    }
+    division = {
+        name = "Ostafrikanische Schutztruppe 11-14"
+        location = 8183#Tanga
+        division_template = "Hussars"
+        start_experience_factor = 0.15
+        # start_equipment_factor = 0.3
+        # start_manpower_factor = 0.3
+    }
+    division = {
+        name = "Ostafrikanische Askari"
+        location = 2196#Kaiti
+        division_template = "Schutztruppe Division"
+        start_experience_factor = 0.15
+        # start_equipment_factor = 0.3
+        # start_manpower_factor = 0.3
+    }
+    navy = {
+        name = "1. Aufklärungsschwadron"
+        location = 241#Wilhelmshaven
+        base = 241#Wilhelmshaven
+        ship = {
+            name = "SMS Königsberg"
+            definition = light_cruiser equipment = {
+                light_cruiser_1906 = {
+                    amount = 1 owner = GER
+                }
+            }
+        }
+    }
+
+   
+}

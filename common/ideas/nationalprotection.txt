@@ -1,0 +1,28 @@
+ideas = {
+
+	country = {
+
+
+	national_protection_war = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_focus_aggressive_factor = 2.0
+				offence = 60.0
+				defence = 0.9
+				army_defence_factor = 0.9
+				army_attack_factor = 60.0
+				land_reinforce_rate = 0.8
+				attrition = -1.0
+				army_speed_factor = 2.5
+			}
+		}
