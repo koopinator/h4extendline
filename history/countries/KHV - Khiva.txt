@@ -7,6 +7,7 @@ set_convoys = 500
 set_national_unity = 0.75
 
 
+1910.1.1 = {
 set_technology = {	
 
     light_field_gun1=1
@@ -66,8 +67,8 @@ set_politics = {
 	}
 	
 	ruling_party = neutrality
-	last_election = "1997.1.1"
-	election_frequency = 48
+	last_election = "1907.1.1"
+	election_frequency = 60
 	elections_allowed = no
 }
 
@@ -75,4 +76,5 @@ create_country_leader = {
 	name = "Isfandiyar Jurji Bahadur"
 	picture = "gfx/leaders/KHV/country_leaders/KHV_Isfandiyar_Bahadur.dds"
 	ideology = despotism
+}
 }
