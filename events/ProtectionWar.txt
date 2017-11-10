@@ -113,7 +113,7 @@ country_event = { #Apparently, Qing is retarded and needs to be reminded to inva
 		trigger = {
 		date < 1911.1.1
 		original_tag = QIN
-		QIN = { NOT = { has_war_with = TIB }  }
+		has_civil_war = no
 	}
 	
 	option = {	#The war has begun
@@ -121,4 +121,42 @@ country_event = { #Apparently, Qing is retarded and needs to be reminded to inva
 		declare_war_on = { target = TIB type = annex_everything }
 	}
 }
+
+country_event = { #Prevent China from Joining the allies early
+	id = protectionwar.6
+	title = protectionwar.6.t
+	desc = protectionwar.6.d
+	hidden = yes
+
+		trigger = {
+		date < 1916.1.28
+		original_tag = QIN
+		is_in_faction = yes
+	}
+	
+	option = {	#The war has begun
+		name = protectionwar.6.o1
+		FRA = { remove_from_faction = QIN }
+		GER = { remove_from_faction = QIN }
+	}
+}
+
+country_event = { #Test event that adds Qing to France's faction
+	id = protectionwar.7
+	title = protectionwar.7.t
+	desc = protectionwar.7.d
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		trigger = {
+		date < 1916.1.28
+		original_tag = QIN
+		is_in_faction = yes
+	}
+	
+	option = {	#The war has begun
+		name = protectionwar.7.o1
+		FRA = { add_to_faction = QIN }
+	}
 }
