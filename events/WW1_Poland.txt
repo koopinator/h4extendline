@@ -1,5 +1,5 @@
 ﻿###########################
-# Persian Events
+# Polish Events
 ###########################
 
 add_namespace = ww1_poland
