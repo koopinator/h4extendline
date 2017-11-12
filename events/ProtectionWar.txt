@@ -75,7 +75,7 @@ country_event = { #Democrats get super strong
 	
 	option = {	#The war has begun
 		name = protectionwar.3.o1
-		add_timed_idea = { idea = national_protection_war days = 200 }
+		add_timed_idea = { idea = national_protection_war days = 333 }
 
 			}
 	}
