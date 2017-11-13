@@ -1,0 +1,29 @@
+state={
+	id=784
+	name="STATE_784"
+	provinces={
+		4598 
+	}
+
+	history={
+		owner = DOM
+		add_core_of = DOM
+		1936.1.1 = {
+			owner = DOM
+			add_core_of = DOM
+			buildings = {
+				infrastructure = 3
+
+			}
+
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	manpower=390000
+	buildings_max_level_factor=1.000
+}
