@@ -1626,7 +1626,7 @@
  protectionwar.3.d:0 "You aren't supposed to be able to read this."
  protectionwar.3.o1:0 "Lorem Ipsum"
  protectionwar.4.t:0 "Yuan Shikai's Revolution"
- protectionwar.4.d:0 "Despite his inability to gain our support, Yuan Shikai has launched his coup nonetheless. He has already captured Beijing, But without popular support his government will probably collapse."
+ protectionwar.4.d:0 "Despite his inability to gain our support, Yuan Shikai has launched his coup nonetheless. He has already surrounded Beijing, But without popular support his government will probably collapse."
  protectionwar.4.o1:0 "Yuan be damned."
 
  # Georgian–Ossetian conflict (1918–20)
@@ -1634,6 +1634,32 @@
  ossetia.1.t:0 "Ossetian revolt"
  ossetia.1.d:0 "The Ossetians have revolted against georgian rule. They'll be a valuable ally in our fight against georgia."
  ossetia.1.o1:0 "Good."
+
+ # Dominican civil war
+
+ dominican.1.o1:0 "The Fascists are now in power."
+ dominican.2.t:0 "Uprising against fascist rule"
+ dominican.2.d:0 "The People are dissatisfied with the new fascist regime. As such, They have risen up against us. Ex-president Horacio Vasquez has returned to our island to lead the uprising. Who should we support?"
+ dominican.2.o1:0 "Support the Nationalists!"
+ dominican.2.o2:0 "Support the Republicans!
+ dominican.4.t:0 "War with the USA"
+ dominican.4.d:0 "After many threats by the USA against us, It seems impossible to avoid war with them. It seems better to declare war now, Than to wait for the US to deal a decisive blow."
+ dominican.4.o1:0 "Molon Labe"
+ dominican.5.t:0 "Peace with the USA"
+ dominican.5.d:0 "Now that we have beaten our rival government, The USA is prepared to end the war."
+ dominican.5.o1:0 "The war is over."
+ dominican.6.t:0 "Proposal to invade Nicaragua"
+ dominican.6.d:0 "hey maybe we could invade nicaragua so we can seize their bananas or something"
+ dominican.6.o1:0 "k"
+ dominican.7.t:0 "Proposal to invade Haiti"
+ dominican.7.d:0 "The Haitan government is corrupt. Maybe we could liberate the haitan people?"
+ dominican.7.o1:0 "The war has begun"
+ dominican.8.t:0 "Proposal to invade the dominican republic"
+ dominican.8.d:0 "Hey did you know that in the 1910s, The USA invaded random countries to get bananas? I can't believe it either. Anyway since this is a historical mod you'll get to play this. Yes, I am breaking the fourth wall here. Tell me if you have a better description."
+ dominican.8.o1:0 "cool"
+ dominican.9.t:0 "Peace agreement"
+ dominican.9.d:0 "After several months of fighting, You have been unable to defeat a nation several orders of magnitude less powerful than you. As such, The war has ended in a white peace."
+ dominican.9.o1:0 "The war is over"
 
 
  # Do not change
