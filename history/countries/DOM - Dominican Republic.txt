@@ -4,16 +4,12 @@
 #					GENERIC VALUES
 #-------------------------------------------------------
 set_research_slots = 3
-set_national_unity = 0.75
+set_national_unity = 0.90
 set_convoys = 5
 set_country_flag=monroe_doctrine
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "José Bordas Valdés" desc=DOM_jose_bordas_valdes_DESC picture="gfx/leaders/DOM_jose_bordas_valdes.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Ramón Baez Machado" desc=DOM_ramon_baez_machado_DESC picture="gfx/leaders/DOM_ramon_baez_machado.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Juan Isidro Jimenes" desc=DOM_juan_isidro_jimenes_DESC picture="gfx/leaders/DOM_juan_isidro_jimenes.dds" expire="1935.1.1" ideology=liberalism traits={  } }
-create_country_leader={ name = "Ramón Cáceres" desc=DOM_ramon_caceres_DESC picture="gfx/leaders/DOM_ramon_caceres.dds" expire="1935.1.1" ideology=despotism  traits={  } }
 
 
 1910.1.1 = {
@@ -24,6 +20,10 @@ create_country_leader={ name = "Ramón Cáceres" desc=DOM_ramon_caceres_DESC pic
 	#-------------------------------------------------------
 
 	#-------------------------------------------------------
+
+	create_country_leader={ name = "Ramón Cáceres" desc=DOM_Ramon_Cacares_DESC picture="gfx/leaders/DOM/country_leaders/DOM_ramon_caceres.dds" expire="1912.11.26" ideology=despotism  traits={  } }
+	create_country_leader={ name = "Eladio Victoria" desc=DOM_Eladio_Victoria_DESC picture="gfx/leaders/DOM/country_leaders/DOM_Eladio_Victoria.dds" expire="1930.11.26" ideology=fascism_ideology  traits={  } }
+	create_country_leader={ name = "Horacio Vasquez" desc=DOM_Horacio_Vasquez_DESC picture="gfx/leaders/DOM/country_leaders/DOM_Horacio_Vasquez.dds" expire="1912.11.01" ideology=conservatism  traits={  } }
 
 	set_technology = {
 
@@ -69,7 +69,7 @@ create_country_leader={ name = "Ramón Cáceres" desc=DOM_ramon_caceres_DESC pic
 		# Industry
 	}
 
-	set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=0 }  communism={ popularity=0  } neutrality={ popularity=100 } }  ruling_party=neutrality last_election="1908.1.1" election_frequency=48 elections_allowed=yes }
+	set_politics={  parties={ democratic={ popularity=40 }  fascism={ popularity=4 }  communism={ popularity=1  } neutrality={ popularity=55 } }  ruling_party=neutrality last_election="1908.1.1" election_frequency=48 elections_allowed=yes }
 
 	add_ideas = {
 
