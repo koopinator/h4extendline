@@ -39,6 +39,24 @@ units = {
 			division_template="Infantry Division"
 			start_experience_factor=0.05
 			}
+	division= { 
+			name = "I Brigada de Infantería"
+			location=7660 # Santo Domingo
+			division_template="Infantry Division"
+			start_experience_factor=0.05
+			}
+	division= { 
+			name = "I Brigada de Infantería"
+			location=7660 # Santo Domingo
+			division_template="Infantry Division"
+			start_experience_factor=0.05
+			}
+	division= { 
+			name = "I Brigada de Infantería"
+			location=7660 # Santo Domingo
+			division_template="Infantry Division"
+			start_experience_factor=0.05
+			}
 	}
 air_wings = { 
 	}
