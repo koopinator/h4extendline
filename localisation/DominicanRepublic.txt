@@ -1,0 +1,204 @@
+﻿###########################
+# Dominican Events
+###########################
+
+add_namespace = dominican
+
+country_event = { #The President is dead!
+	id = dominican.1
+	title = political.9.t
+	desc = political.9.d
+	picture = GFX_report_event_fascist_gathering
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1911.11.01
+		tag = DOM
+		has_government = neutrality
+	}
+	
+	option = {	#Oh dear
+		name = dominican.1.o1
+		kill_country_leader = yes
+		add_popularity = { ideology = fascism popularity = 0.6 }
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		country_event = { days = 15 id = dominican.2 }
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #dominican civil war https://en.wikipedia.org/wiki/Dominican_Civil_War_(1911–12)
+	id = dominican.2
+	title = dominican.2.t
+	desc = dominican.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = DOM
+	}
+	
+	option = {	#Support Nationalists
+		name = dominican.2.o1
+				start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.6
+				states = { 784 }
+			}
+			ai_chance = { factor = 100 }
+	}
+
+	option = {	#Support Republicans
+		name = dominican.2.o2
+				start_civil_war = {
+				ruling_party = neutrality
+				ideology = fascism
+				size = 0.4
+				states = { 319  }
+			}
+
+			set_capital = 784
+
+			ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #Reset capital - Why isn't this automatic?
+	id = dominican.3
+	title = dominican.3.t
+	desc = dominican.3.d
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = DOM
+		date > 1911.12.18
+		has_civil_war = no
+		owns_state = 319
+	}
+	
+	option = {	#Reset
+		name = dominican.3.o1
+		set_capital = 319
+		create_country_leader = { name = "Adolfo Nouel" picture="gfx/leaders/DOM/country_leaders/DOM_Adolfo_Nouel.dds" expire = "1955.1.1" ideology = conservatism traits = { } }
+	}
+}
+
+country_event = { #United states intervention in the dominican civil war
+	id = dominican.4
+	title = dominican.4.t
+	desc = dominican.4.d
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = DOM
+		date > 1912.8.6
+		date < 1915.8.6
+		has_civil_war = yes
+		has_government = neutrality
+		USA = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#Molon Labe
+		name = dominican.4.o1
+		declare_war_on = { target = USA }
+	}
+}
+
+country_event = { #Peace between Dominican Republic and USA
+	id = dominican.5
+	title = dominican.5.t
+	desc = dominican.5.d
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = DOM
+		date > 1913.1.1
+		date < 1916.5.5
+		has_civil_war = no
+		has_war_with = USA
+	}
+	
+	option = {	#The war is over
+		name = dominican.5.o1
+		white_peace = USA
+	}
+}
+
+country_event = { #United states invades Nicaragua
+	id = dominican.6
+	title = dominican.6.t
+	desc = dominican.6.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1912.8.4
+		USA = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#The war has begun
+		name = dominican.6.o1
+		declare_war_on = { target = NIC type = annex_everything }
+		country_event = { days = 200 id = dominican.9 }
+	}
+}
+
+country_event = { #United states invades Haiti
+	id = dominican.7
+	title = dominican.7.t
+	desc = dominican.7.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1915.7.28
+		USA = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#The war has begun
+		name = dominican.7.o1
+		declare_war_on = { target = HAI type = annex_everything }
+		country_event = { days = 200 id = dominican.9 }
+	}
+}
+
+country_event = { #United states invades Dominican Republic a second time.
+	id = dominican.8
+	title = dominican.8.t
+	desc = dominican.8.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		date > 1916.5.5
+		USA = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#The war has begun
+		name = dominican.8.o1
+		declare_war_on = { target = DOM type = annex_everything }
+		country_event = { days = 200 id = dominican.9 }
+	}
+}
+
+country_event = { #Punish the USA if it sucks at defeating third world nations
+	id = dominican.9
+	title = dominican.9.t
+	desc = dominican.9.d
+	is_triggered_only = yes
+
+	trigger = {
+		tag = USA
+		has_war = yes
+	}
+	
+	option = {	#The war has ended
+		name = dominican.9.o1
+		white_peace = HAI
+		white_peace = DOM
+		white_peace = NIC
+	}
+}
