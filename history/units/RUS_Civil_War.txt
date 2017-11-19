@@ -1,0 +1,795 @@
+﻿division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	#priority = 2
+}
+division_template = {
+	name = "White Partisan"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Cavalry Division"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Car Division"
+	regiments = {
+		armored_car = { x = 0 y = 0 }
+		armored_car = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	#===================================================================================
+	#8 Units on major towns, 3 on small towns
+	division = {
+		name = "White Infantry Division"
+		location = 3529
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3529
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3529
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3529
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3529
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3529
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3529
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3529
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 4832
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 4832
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 4832
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 4832
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 4832
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 4832
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 4832
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 4832
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7868
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7868
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7868
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7868
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7868
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7868
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7868
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7868
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3734
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3734
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3734
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3734
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3734
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3734
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3734
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3734
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	#That's the major White cities
+
+	division = {
+		name = "White Infantry Division"
+		location = 3505
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3505
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 3505
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 11484
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 11484
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 11484
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6601
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6601
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 6601
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 9473
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 9473
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7851
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7851
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 7851
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1168
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1168
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 1168
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 9488
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 9488
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 9488
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 11418
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 11418
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 11418
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3361
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 3361
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 9385
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 9385
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 9385
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7708
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7708
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 7708
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 10533
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 10533
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 10533
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1493
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1493
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 12465
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 12465
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 10262
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 10262
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 10262
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6620
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6620
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Armored Division"
+		location = 6620
+		division_template="Armored Car Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 7871
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 1821
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+	division = {
+		name = "White Infantry Division"
+		location = 6124
+		division_template="Infantry Division"
+		start_experience_factor=0.7
+	}
+
+
+
+
+
+
+	#===================================================================================
+}
