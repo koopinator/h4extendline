@@ -1,0 +1,735 @@
+﻿division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+	#priority = 2
+}
+division_template = {
+	name = "Bolsheviks Partisan"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		}
+	support = {
+	}
+	priority = 0
+}
+division_template = {
+	name = "Cavalry Division"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		}
+	support = {
+	}
+}
+
+units = {
+
+
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 10655
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4246
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12136
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 12143
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7281
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4389
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4389
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4389
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4277
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4277
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 4277
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7657
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7657
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 7657
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 487
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 487
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 487
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9461
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9461
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9461
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3578
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3578
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3578
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11500
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11500
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11500
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9449
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9449
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9449
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11351
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11351
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11351
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 6369
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 6369
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 6369
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3580
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3580
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3580
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3250
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3250
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3250
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11368
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11368
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11368
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3335
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3335
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3335
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11325
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11325
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11325
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9396
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9396
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9396
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11235
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11235
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11235
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11236
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11236
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 11236
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 6131
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 6131
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 6131
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3140
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3140
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 3140
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9098
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9098
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9098
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9097
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9097
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "Bolsheviks Infantry Division"
+		location = 9097
+		division_template="Infantry Division"
+		start_experience_factor=0.8
+	}
+
+
+}
