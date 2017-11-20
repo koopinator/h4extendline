@@ -4,6 +4,7 @@ state={
 	provinces={
 		4598 
 	}
+	state_category=city
 
 	history={
 		owner = DOM
