@@ -45,8 +45,6 @@ news_event = {
 		RNC = { transfer_state = 233 }
 		release = CRI
 		CRI = { transfer_state = 137 }
-		release = MDV
-		MDV = { transfer_state = 78 }
 
 		} }
 	}

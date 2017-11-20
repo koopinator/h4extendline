@@ -157,6 +157,30 @@ country_event = { #Test event that adds Qing to France's faction
 	
 	option = {	#The war has begun
 		name = protectionwar.7.o1
-		FRA = { add_to_faction = QIN }
+		MDV = { 
+				transfer_state = 147
+				transfer_state = 137
+				transfer_state = 213
+				transfer_state = 214
+				transfer_state = 215
+				transfer_state = 216
+				transfer_state = 234
+				transfer_state = 235
+				transfer_state = 236
+				transfer_state = 237
+				transfer_state = 249
+				transfer_state = 250
+				transfer_state = 251
+				transfer_state = 256
+				transfer_state = 238
+				transfer_state = 351
+				transfer_state = 400
+				transfer_state = 401
+				transfer_state = 406
+				transfer_state = 407
+				transfer_state = 652
+				transfer_state = 722
+
+		 }
 	}
 }

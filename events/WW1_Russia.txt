@@ -196,6 +196,9 @@ news_event = {
 				add_state_claim = 264
 				add_state_claim = 253
 				add_state_claim = 254
+
+
+
 				
 				load_oob = SOV_Revolt_01
 				
@@ -366,7 +369,7 @@ news_event = {
 		country_exists = SOV
 		RUS = {
 			has_war_with = SOV
-			surrender_progress > 0.50
+			surrender_progress > 0.27
 			NOT = { 
 				has_global_flag = kis_brestlitovsk 
 				has_country_flag = kis_octoberrevolutioncrushed
@@ -601,7 +604,8 @@ country_event = {
 						exists = yes
 					}
 				}
-				ROM = {
+				release = MDV
+				MDV = {
 					transfer_state = 78
 					add_state_core = 78
 				}
@@ -676,7 +680,10 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
-		    SOV = { country_event = { days = 210 id = ww1_soviet.2 }
+		    SOV = { 
+		    country_event = { days = 210 id = ww1_soviet.2 } 
+		    country_event = { days = 1 id = ww1_soviet.23 } 
+		    annex_country = { target = SOV } }
 		    if = { limit = { NOT = { OR = { has_completed_focus = SOV_ww1_claim_victory has_completed_focus = SOV_ww1_establish_cheka } } }
 			RUS = {
 				create_faction = "White Movement"
@@ -702,104 +709,156 @@ news_event = {
 				    election_frequency = 60 elections_allowed = no
 				}
 
-				declare_war_on = {
-		            type = annex_everything
-		            target = SOV
-		        }
-
-				transfer_state = 147
-				transfer_state = 137
-				transfer_state = 213
-				transfer_state = 214
-				transfer_state = 215
-				transfer_state = 216
 				transfer_state = 234
-				transfer_state = 235
-				transfer_state = 236
+				transfer_state = 218
+				transfer_state = 245
+				transfer_state = 217
 				transfer_state = 237
-				transfer_state = 249
-				transfer_state = 250
-				transfer_state = 251
-				transfer_state = 256
+				transfer_state = 235
+				transfer_state = 234
 				transfer_state = 238
-				transfer_state = 351
-				transfer_state = 400
-				transfer_state = 401
-				transfer_state = 406
+				transfer_state = 585
+				transfer_state = 587
+				transfer_state = 584
+				transfer_state = 402
 				transfer_state = 407
-				transfer_state = 652
-				transfer_state = 722
-				load_oob = "SOV_Civil_War"
+				transfer_state = 406
+				transfer_state = 236
+				transfer_state = 401
+				transfer_state = 249
+				transfer_state = 400
+				transfer_state = 256
+				transfer_state = 397
+				transfer_state = 262
+				transfer_state = 581
+				transfer_state = 573
+				transfer_state = 398
+				transfer_state = 399
+				transfer_state = 572
+				transfer_state = 653
+				transfer_state = 580
+				transfer_state = 579
+				transfer_state = 590
+				transfer_state = 589
+				transfer_state = 516
+				transfer_state = 577
+				transfer_state = 403
+				transfer_state = 571
+				transfer_state = 588
+				transfer_state = 654
+				transfer_state = 644
+				transfer_state = 575
+				transfer_state = 576
+				transfer_state = 578
+				transfer_state = 570
+				transfer_state = 40
+				transfer_state = 569
+				transfer_state = 576
+				transfer_state = 568
+				transfer_state = 567
+				transfer_state = 574
+				transfer_state = 566
+				transfer_state = 565
+				transfer_state = 563
+				transfer_state = 561
+				transfer_state = 562
+				transfer_state = 637
+				transfer_state = 564
+				transfer_state = 560
+				transfer_state = 655
+
+				load_oob = RUS_Civil_War
 			}
 		    }
 		}
 	}
-	}
 	option = {
 		name = ww1_russia.20.a
-		ai_chance = { factor = 100 }				
+		country_event = { days = 1 id = ww1_russia.23 }
+		ai_chance = { factor = 100 }
+		}
 	}
-}
 #____________________________________________________________
 
 #  Peace treaty between Entente and Soviets
 #____________________________________________________________
 
-country_event = {
-	title=ww1_russia.21.t#Peace treaty between Entente and Soviets
-	desc=ww1_russia.21.d#Ends eternal war between Soviets and Entente (irl: Soviet–Japanese Basic Convention)
-	id=ww1_russia.21
-	picture=GFX_report_event_generic_read_write
-	fire_only_once=yes
-	
+#You are willing to substitute small-scale volunteer deployments for full-scale war? damn you
+
+#country_event = {
+#	title=ww1_russia.21.t#Peace treaty between Entente and Soviets
+#	desc=ww1_russia.21.d#Ends eternal war between Soviets and Entente (irl: Soviet–Japanese Basic Convention)
+#	id=ww1_russia.21
+#	picture=GFX_report_event_generic_read_write
+#	fire_only_once=yes
+#	
+#	trigger = {
+#	    tag = SOV
+#		date > 1925.1.19
+#		SOV = { has_war_with = JAP has_war_with = FRA }
+#	}
+#	
+#	mean_time_to_happen = { days = 1 }
+#	
+#	option={
+#		name= "It's time to stop"
+#		ai_chance={
+#			factor=100
+#		}
+#		trigger = {
+#		    tag = SOV
+#		}
+#		if = { limit = { JAP = { is_in_faction_with = FRA } }
+#		every_country = {
+#		    limit = {
+#			    OR = {
+#			        tag = JAP
+#		            is_in_faction_with = JAP
+#			    }
+#			}
+#			white_peace = SOV
+#		}
+#		else = {
+#		every_country = {
+#		    limit = {
+#			    OR = {
+#			        tag = FRA
+#		            is_in_faction_with = FRA
+#			    }
+#			}
+#			white_peace = SOV
+#		}
+#		JAP = { white_peace = SOV }
+#		}
+#	    }
+#	}
+#	option={
+#		name= "Never"
+#		trigger = {
+#		    tag = SOV
+#		}
+#		ai_chance={
+#			factor=0
+#		}
+#	}
+#}
+
+country_event = { #quick russian civil war thing please ignore
+	id = ww1_russia.23
+	title = ww1_russia.23.t
+	desc = ww1_russia.23.d
+	hidden = yes
+	is_triggered_only = yes
+
 	trigger = {
 	    tag = SOV
-		date > 1925.1.19
-		SOV = { has_war_with = JAP has_war_with = FRA }
 	}
 	
-	mean_time_to_happen = { days = 1 }
-	
-	option={
-		name= "It's time to stop"
-		ai_chance={
-			factor=100
-		}
-		trigger = {
-		    tag = SOV
-		}
-		if = { limit = { JAP = { is_in_faction_with = FRA } }
-		every_country = {
-		    limit = {
-			    OR = {
-			        tag = JAP
-		            is_in_faction_with = JAP
-			    }
-			}
-			white_peace = SOV
-		}
-		else = {
-		every_country = {
-		    limit = {
-			    OR = {
-			        tag = FRA
-		            is_in_faction_with = FRA
-			    }
-			}
-			white_peace = SOV
-		}
-		JAP = { white_peace = SOV }
-		}
-	    }
-	}
-	option={
-		name= "Never"
-		trigger = {
-		    tag = SOV
-		}
-		ai_chance={
-			factor=0
-		}
+	option = {	#end this ahistoric war
+			name = protectionwar.23.o1
+				declare_war_on = { target = RUS type = annex_everything }
+				load_oob = SOV_civilwaroob
 	}
 }
+
 #____________________________________________________________
