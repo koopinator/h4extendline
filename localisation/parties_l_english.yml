@@ -453,3 +453,7 @@
  MDV_fascism_party:0 "Moldovenists"
  BUK_communism_party:0 "Young Bukharians"
  BUK_neutrality_party:0 "Manghit Dynasty"
+ MEM_communism_party:0 "Worker's Party"
+ MEM_neutrality_party:0 "Agricultural Party"
+ MEM_democratic_party:0 "Social Democrats"
+ MEM_democratic_party_long:0 "Social Democratic Party of the Memel Territory"
