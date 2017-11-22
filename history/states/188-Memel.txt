@@ -10,6 +10,7 @@ state={
 	history={
 		owner=GER
 		add_core_of=LIT
+		add_core_of=MEM
 		add_core_of=RUS
 		1936.1.1={ 
 			owner=LIT
