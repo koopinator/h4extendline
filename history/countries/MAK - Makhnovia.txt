@@ -1,0 +1,77 @@
+﻿capital = 200
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_research_slots = 3
+set_national_unity = 0.50
+set_convoys = 10
+
+#-------------------------------------------------------
+#					POLITICS & ARMY
+#-------------------------------------------------------
+create_country_leader={ name="Nestor Makhno" desc=MAK_nestor_makhno_DESC picture="gfx/leaders/MAK/MAK_Nestor_Makhno.dds" expire="1935.1.1" ideology=despotism traits={  } }
+create_corps_commander={  name = "Simon Karetnik" portrait_path="gfx/leaders/MAK/MAK_Simon_Karetnik.dds" traits={   } skill=3 }
+create_corps_commander={  name = "Lev Zadov" portrait_path="gfx/leaders/MAK/MAK_Lev_Zadov.dds" traits={   } skill=2 }
+create_corps_commander={  name = "Fedir Shchus" portrait_path="gfx/leaders/MAK/MAK_Fedir_Shchus" traits={   } skill=2 }
+create_corps_commander={  name = "Dmitry Ivanovich Popov" portrait_path="gfx/leaders/MAK/MAK_Ivanovich_Popov" traits={   } skill=2 }
+
+1910.1.1 = {
+	oob = "UKR_1910"
+
+	#-------------------------------------------------------
+	#							NF
+	#-------------------------------------------------------
+
+	#-------------------------------------------------------
+
+	set_technology = {
+
+		# Infantry
+		infantry_weapons = 1
+		support_weapons = 1
+		infantry_binoculars = 1
+		motorised_infantry = 1
+		ww1_ambulance1 = 1
+
+
+		# Support
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		#tech_military_police = 1
+		#tech_maintenance_company = 1
+		#tech_field_hospital = 1
+		#tech_logistics_company = 1
+
+		# Armor
+
+		# Artillery
+		light_field_gun1 = 1
+		heavy_field_gun1 = 1
+
+		# Navy
+		ww1_destroyer0 = 1
+		ww1_destroyer1 = 1
+		ww1_light_cruiser1 = 1
+		ww1_light_cruiser0 = 1
+		ww1_battlecruiser0 = 1
+		ww1_battleship0 = 1
+		ww1_submarine1 = 1
+		ww1_coastal_submarine1 = 1
+		transport = 1
+
+		# Air
+
+		# Engineering
+		electronic_mechanical_engineering = 1
+
+		# Industry
+	}
+
+	set_politics={  parties={ democratic={ popularity=20 }  fascism={ popularity=18 }  communism={ popularity=2 }  neutrality={ popularity=60 } }  ruling_party=neutrality last_election="1919.1.1" election_frequency=48 elections_allowed=yes }
+
+	add_ideas = {
+
+	}	
+}
