@@ -683,6 +683,7 @@ news_event = {
 		    SOV = { 
 		    country_event = { days = 210 id = ww1_soviet.2 } 
 		    country_event = { days = 1 id = ww1_soviet.23 } 
+		    country_event = { days = 50 id = ww1_russia.24 }
 		    annex_country = { target = SOV } }
 		    if = { limit = { NOT = { OR = { has_completed_focus = SOV_ww1_claim_victory has_completed_focus = SOV_ww1_establish_cheka } } }
 			RUS = {
@@ -774,7 +775,6 @@ news_event = {
 	}
 	option = {
 		name = ww1_russia.20.a
-		country_event = { days = 1 id = ww1_russia.23 }
 		ai_chance = { factor = 100 }
 		}
 	}
@@ -858,6 +858,25 @@ country_event = { #quick russian civil war thing please ignore
 			name = protectionwar.23.o1
 				declare_war_on = { target = RUS type = annex_everything }
 				load_oob = SOV_civilwaroob
+	}
+}
+
+country_event = { #Green uprising
+	id = ww1_russia.24
+	title = ww1_russia.24.t
+	desc = ww1_russia.24.d
+	is_triggered_only = yes
+
+	trigger = {
+	    tag = SOV
+	}
+	
+	option = {	#end this ahistoric war
+			name = ww1_russia.24.o1
+			SOV = { declare_war_on = { target = GRN type = annex_everything } }
+			RUS = { declare_war_on = { target = GRN type = annex_everything } }
+			GRN = { transfer_state = 257 }
+			GRN = { load_oob = GRN_1918 }
 	}
 }
 

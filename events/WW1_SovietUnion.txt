@@ -45,6 +45,7 @@ news_event = {
 		RNC = { transfer_state = 233 }
 		release = CRI
 		CRI = { transfer_state = 137 }
+		CRI = { load_oob = CRI_1918 }
 
 		} }
 	}
