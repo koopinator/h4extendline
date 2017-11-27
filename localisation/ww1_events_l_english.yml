@@ -1666,6 +1666,9 @@
  ww1_russia.24.t:0 "Green Armies rise up!"
  ww1_russia.24.d:0 "The Peasantry are discontented with our tax policy, As it has driven them to poverty. They have started a desperate fight for their own survival, And have formed the green movement to oppose us."
  ww1_russia.24.o1:0 "Let's crush the rebellion."
+ ww1_russia.25.t:0 "Anarchist Armies rise up!"
+ ww1_russia.25.d:0 "The Ukrainian Anarchists, Led by Nestor Makhno, Have declared their independence. They are prepared to fight the White and Red armies alike in order to realize their ideal, stateless society."
+ ww1_russia.25.o1:0 "They will be crushed."
 
 
  # Do not change

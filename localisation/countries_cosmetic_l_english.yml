@@ -342,6 +342,7 @@
  CZE_GER_fascism_autonomy_puppet_DEF:0 "The Reichsprotektorat Böhmen-Mähren"
  POL_GER_fascism_autonomy_puppet_DEF:1 "The Generalgouvernement"
  TNZ_GER_autonomy_puppet:0 "German East Africa"
+ TNZ_GER_autonomy_puppet_DEF:0 "German East Africa"
  TNZ_GER_autonomy_puppet_ADJ:0 "East African"
  CRI_SOV_communism_autonomy_puppet:0 "Taurida SSR"
  CRI_SOV_communism_autonomy_puppet_ADJ:0 "Tauridan"
@@ -361,3 +362,4 @@
  MDV_SOV_communism_autonomy_puppet:0 "Moldovan SSR"
  MEM_LIT:0 "Klaipeda"
  MEM_LIT_ADJ:0 "Klaipedan"
+ 
