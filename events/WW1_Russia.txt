@@ -517,16 +517,10 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			GER = {
-				transfer_state = 10
 				transfer_state = 11
-				transfer_state = 87
-				transfer_state = 90
-				transfer_state = 92
 				transfer_state = 94
 				transfer_state = 95
 				transfer_state = 96
-				transfer_state = 97
-				transfer_state = 98
 				transfer_state = 189
 			}
 			LIT = {
@@ -682,8 +676,8 @@ news_event = {
 		hidden_effect = {
 		    SOV = { 
 		    country_event = { days = 210 id = ww1_soviet.2 } 
-		    country_event = { days = 1 id = ww1_soviet.23 } 
 		    country_event = { days = 50 id = ww1_russia.24 }
+		    country_event = { days = 100 id = ww1_russia.25 }
 		    annex_country = { target = SOV } }
 		    if = { limit = { NOT = { OR = { has_completed_focus = SOV_ww1_claim_victory has_completed_focus = SOV_ww1_establish_cheka } } }
 			RUS = {
@@ -775,6 +769,7 @@ news_event = {
 	}
 	option = {
 		name = ww1_russia.20.a
+		country_event = { days = 1 id = ww1_soviet.23 } 
 		ai_chance = { factor = 100 }
 		}
 	}
@@ -857,6 +852,7 @@ country_event = { #quick russian civil war thing please ignore
 	option = {	#end this ahistoric war
 			name = protectionwar.23.o1
 				declare_war_on = { target = RUS type = annex_everything }
+				declare_war_on = { target = UKR type = annex_everything }
 				load_oob = SOV_civilwaroob
 	}
 }
@@ -871,12 +867,34 @@ country_event = { #Green uprising
 	    tag = SOV
 	}
 	
-	option = {	#end this ahistoric war
+	option = {	#it begins
 			name = ww1_russia.24.o1
 			SOV = { declare_war_on = { target = GRN type = annex_everything } }
 			RUS = { declare_war_on = { target = GRN type = annex_everything } }
 			GRN = { transfer_state = 257 }
 			GRN = { load_oob = GRN_1918 }
+	}
+}
+
+country_event = { #Makhnovist uprising
+	id = ww1_russia.25
+	title = ww1_russia.25.t
+	desc = ww1_russia.25.d
+	is_triggered_only = yes
+
+	trigger = {
+	    tag = SOV
+	}
+	
+	option = {	#end this ahistoric war
+			name = ww1_russia.25.o1
+			SOV = { declare_war_on = { target = MAK type = annex_everything } }
+			RUS = { declare_war_on = { target = MAK type = annex_everything } }
+			MAK = { declare_war_on = { target = UKR type = annex_everything } }
+			MAK = { transfer_state = 200 }
+			MAK = { transfer_state = 226 }
+			MAK = { load_oob = MAK_1918 }
+			MAK = { add_timed_idea = { idea = anarchist_uprising days = 75 } }
 	}
 }
 

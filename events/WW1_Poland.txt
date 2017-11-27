@@ -40,11 +40,6 @@ country_event = { #Germany is asked if they want to create a polish puppet state
 		92 = { add_core_of = POL }
 		GER = { country_event = { days = 1 id = ww1_poland.2 } }
 	}
-
-	option = {	#Maybe later.
-		name = ww1_poland.1.o2
-		ai_chance = { factor = 0 }
-	}
 	}
 
 country_event = { #Poland puppeted
