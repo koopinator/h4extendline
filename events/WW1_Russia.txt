@@ -369,7 +369,7 @@ news_event = {
 		country_exists = SOV
 		RUS = {
 			has_war_with = SOV
-			surrender_progress > 0.27
+			surrender_progress > 0.25
 			NOT = { 
 				has_global_flag = kis_brestlitovsk 
 				has_country_flag = kis_octoberrevolutioncrushed
@@ -843,12 +843,10 @@ country_event = { #quick russian civil war thing please ignore
 	title = ww1_russia.23.t
 	desc = ww1_russia.23.d
 	hidden = yes
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
 	    tag = SOV
-	    SOV = { has_war_with = RUS }
-	    RUS = { NOT = { has_war_with = GER } }
 	}
 	
 	option = {	#end this ahistoric war
