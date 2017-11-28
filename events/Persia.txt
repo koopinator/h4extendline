@@ -107,6 +107,7 @@ country_event = { #Persian civil war - https://en.wikipedia.org/wiki/Jungle_Move
 
 	trigger = {
 		tag = PER
+		PER = { has_civil_war = no }
 	}
 	
 	option = {	#Death to the Revolution!
@@ -128,7 +129,7 @@ country_event = { #Soviet union gives back Tabriz in order to start communist re
 
 	trigger = {
 		tag = SOV
-		date > 1920.5.01
+		PER = { has_civil_war = no }
 		SOV = { controls_state = 419 }
 	}
 	
@@ -150,6 +151,7 @@ country_event = { #Persian civil war - Communist vs Capitalist - https://en.wiki
 
 	trigger = {
 		original_tag = PER
+		PER = { has_civil_war = no }
 	}
 	
 	option = {	#Death to the Revolution!

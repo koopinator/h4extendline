@@ -675,9 +675,6 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 		    SOV = { 
-		    country_event = { days = 210 id = ww1_soviet.2 } 
-		    country_event = { days = 50 id = ww1_russia.24 }
-		    country_event = { days = 100 id = ww1_russia.25 }
 		    annex_country = { target = SOV } }
 		    if = { limit = { NOT = { OR = { has_completed_focus = SOV_ww1_claim_victory has_completed_focus = SOV_ww1_establish_cheka } } }
 			RUS = {
@@ -769,7 +766,6 @@ news_event = {
 	}
 	option = {
 		name = ww1_russia.20.a
-		country_event = { days = 1 id = ww1_soviet.23 } 
 		ai_chance = { factor = 100 }
 		}
 	}
@@ -843,19 +839,28 @@ country_event = { #quick russian civil war thing please ignore
 	title = ww1_russia.23.t
 	desc = ww1_russia.23.d
 	hidden = yes
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
 	    tag = SOV
+	    RUS = { NOT =  { has_war_with = GER } }
 	}
 	
 	option = {	#end this ahistoric war
 			name = protectionwar.23.o1
-				declare_war_on = { target = RUS type = annex_everything }
-				declare_war_on = { target = UKR type = annex_everything }
-				load_oob = SOV_civilwaroob
-	}
-}
+			country_event = { days = 3 id = ww1_soviet.2 } 
+		    country_event = { days = 100 id = ww1_russia.24 }
+		    country_event = { days = 200 id = ww1_russia.25 }
+			declare_war_on = { target = RUS type = annex_everything }
+			declare_war_on = { target = UKR type = annex_everything }
+			load_oob = SOV_civilwaroob
+
+			BUK = {	annex_country = { target = BUK } }
+			KHV = {	annex_country = { target = KHV } }
+			MON = {	annex_country = { target = MON } }
+
+			}
+		}
 
 country_event = { #Green uprising
 	id = ww1_russia.24

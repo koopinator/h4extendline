@@ -67,6 +67,12 @@ news_event = {
 		AZR = { declare_war_on = { target = SOV type = take_state_focus } }
 		GEO = { declare_war_on = { target = SOV type = take_state_focus } }
 		RNC = { declare_war_on = { target = SOV type = take_state_focus } }
+		SOV = { declare_war_on = { target = BUK } }
+		SOV = { declare_war_on = { target = KHV } }
+		SOV = { declare_war_on = { target = MON } }
+		RUS = { add_to_faction = BUK }
+		RUS = { add_to_faction = KHV }
+		RUS = { add_to_faction = MON }
 		country_event = { id = ww1.soviet.3 days = 5 }
 	}
 	option={
