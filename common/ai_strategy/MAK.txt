@@ -1,0 +1,12 @@
+take_over_ukraine = {
+	enable = {
+		tag = MAK
+		UKR = { exists = yes }
+	}
+
+	ai_strategy = {
+		type = invade
+		id = "UKR"			
+		value = 2000 
+	}
+}
