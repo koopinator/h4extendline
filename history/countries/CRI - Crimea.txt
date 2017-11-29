@@ -72,5 +72,7 @@ create_field_marshal={  name = "Jaffer Siedamet Kirimer" portrait_path="gfx/lead
 
 	add_ideas = {
 
+	neutrality_idea
+
 	}	
 }

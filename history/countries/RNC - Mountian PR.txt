@@ -53,3 +53,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
+
+	add_ideas = {
+
+	neutrality_idea
+
+	}	
