@@ -1611,6 +1611,9 @@
  persia.10.t:0 "New persian revolt against the monarchy"
  persia.10.d:0 "Mirzâ Kuçak Xân has not given up. He has launched a new revolution to depose the shah once more."
  persia.10.o1:0 "We shall crush the revolution!"
+ persia.11.t:0 "The New Russo-Iranian war"
+ persia.11.d:0 "Ever since 1905, Persia has been rapidly reforming towards a democracy. In 1906, The Persian Parliament approved a new Constituion which would improve civil rights and limit the powers of the Persian throne. Even though the constitution was later vetoed by Mohammad Ali Shah, The Constitutionalists managed to oust him from power and implement the Constitution anyway in 1909. Russia intends to keep Iran weak, And thus they have launched a new Russo-Iranian war, Breaking almost 83 years of peace."
+ persia.11.o1:0 "The war has begun"
 
  # National Protection War
 
@@ -1669,6 +1672,16 @@
  ww1_russia.25.t:0 "Anarchist Armies rise up!"
  ww1_russia.25.d:0 "The Ukrainian Anarchists, Led by Nestor Makhno, Have declared their independence. They are prepared to fight the White and Red armies alike in order to realize their ideal, stateless society."
  ww1_russia.25.o1:0 "They will be crushed."
+ ww1_russia.26.t:0 "The Basmachi movement"
+ ww1_russia.26.d:0 "Turkestani Nationalists have risen up against soviet rule. They will be a powerful ally to us"
+ ww1_russia.26.o1:0 "Ok"
+ ww1_russia.27.t:0 "Basmachi rescues the Transoxianan flank"
+ ww1_russia.27.d:0 "Just as Transoxiana was about to fall to the soviets, The Basmachi have taken it. They will Protect it for now, But we'll need to be careful to maintain our situation."
+ ww1_russia.27.o1:0 "Ok"
+ ww1_russia.28.t:0 "Northern Defectors"
+ ww1_russia.28.d:0 "Soviet troops have defected to our cause."
+ ww1_russia.28.o1:0 "Ok"
+
 
 
  # Do not change
