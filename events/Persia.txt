@@ -49,6 +49,7 @@ country_event = { #Ultimatum to Persia
 	option = {	#Death to Russian imperialism!
 		name = persia.2.o2
 		RUS = { declare_war_on = { target = PER } }
+		news_event = { days = 1 id = persia.11 }
 		ai_chance = { factor = 85 }
 	}
 }
@@ -240,5 +241,19 @@ country_event = { #Constitutionalists start new civil war
 	}
 }
 
+news_event = { #Russo Iranian war News flash
+
+	id = persia.11
+	title = persia.11.t
+	desc = persia.11.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {	#The war has begun
+		name = persia.11.o1
+	}
+}
 
 
