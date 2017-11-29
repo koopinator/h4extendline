@@ -624,7 +624,7 @@ country_event = {
 		name = ww1_russia.10.a
 		ai_chance = { factor = 100 }
 		hidden_effect = {
-			country_event = { days = 420 id = ww1_russia.20 }
+			country_event = { days = 20 id = ww1_russia.20 }
 		}
 	}
 }
@@ -760,8 +760,7 @@ news_event = {
 				transfer_state = 655
 
 				load_oob = RUS_Civil_War
-
-				country_event = { days = 1 id = ww1_russia.23 }
+				country_event = { days = 1 id = ww1_soviet.23 }
 			}
 		    }
 		}
@@ -841,10 +840,10 @@ country_event = { #quick russian civil war thing please ignore
 	title = ww1_russia.23.t
 	desc = ww1_russia.23.d
 	hidden = yes
-	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
-	    tag = SOV
+	    tag = RUS
 	    RUS = { NOT =  { has_war_with = GER } }
 	    country_exists = SOV
 	    country_exists = RUS
@@ -924,7 +923,7 @@ country_event = { #East Basmachi uprising
 	option = {	#it begins
 			name = ww1_russia.26.o1
 			SOV = { declare_war_on = { target = BAS type = annex_everything } }
-			BAS = { add_to_war = { targeted_alliance = BUK enemy = SOV } }
+			BUK = { add_to_war = { targeted_alliance = BAS enemy = SOV } }
 			BAS = { transfer_state = 732 }
 			BAS = { transfer_state = 742 }
 			BAS = { load_oob = BAS_East }
@@ -938,13 +937,14 @@ country_event = { #West Basmachi uprising
 
 	trigger = {
 	    tag = SOV
+	    country_exists = RUS
 	    SOV = { controls_state = 585 }
 	}
 	
 	option = {	#it begins
 			name = ww1_russia.27.o1
 			SOV = { declare_war_on = { target = BAS type = annex_everything } }
-			BAS = { add_to_war = { targeted_alliance = BUK enemy = SOV } }
+			BUK = { add_to_war = { targeted_alliance = BAS enemy = SOV } }
 			BAS = { transfer_state = 585 }
 			BAS = { load_oob = BAS_West }
 	}
@@ -964,7 +964,7 @@ country_event = { #North Basmachi uprising
 	option = {	#it begins
 			name = ww1_russia.28.o1
 			SOV = { declare_war_on = { target = BAS type = annex_everything } }
-			BAS = { add_to_war = { targeted_alliance = BUK enemy = SOV } }
+			BUK = { add_to_war = { targeted_alliance = BAS enemy = SOV } }
 			BAS = { transfer_state = 586 }
 			BAS = { load_oob = BAS_North }
 	}
