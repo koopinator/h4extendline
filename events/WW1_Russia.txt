@@ -2,8 +2,6 @@
 
 
 # Saint Petersburg renamed to Petrograd
-# Alright, So last night i was wondering wether or not you could put Bukhara's, Khiva's and Mongolia's self-annexation
-at the treaty of brest-litovsk instead of at the russian civil war. That would give the Khanates just a little bit more time to prepare and shit, y'know? Anyway i'm off to FINALLY play AM2R, Was about damned time. Of course, I did have a good reason for delaying my playtrough: I wanted to play Metroid: Zero Mission first. I'm gonna play these darned games in chronological order. Wish me luck!
 #____________________________________________________________
 country_event = {
 	id = ww1_russia.1
@@ -873,6 +871,7 @@ country_event = { #Green uprising
 	title = ww1_russia.24.t
 	desc = ww1_russia.24.d
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
 	    tag = SOV
@@ -892,6 +891,7 @@ country_event = { #Makhnovist uprising
 	title = ww1_russia.25.t
 	desc = ww1_russia.25.d
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
 	    tag = SOV
@@ -917,6 +917,7 @@ country_event = { #East Basmachi uprising
 	title = ww1_russia.26.t
 	desc = ww1_russia.26.d
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
 	    tag = SOV
