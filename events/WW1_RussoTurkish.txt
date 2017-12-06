@@ -1,0 +1,114 @@
+﻿add_namespace = ww1_russoturkish
+
+#In this alternate history, The Ottoman empire annexed serbia following its victory in the first balkan war, Thus possibly averting ww1. 
+#However, Russia wants the ottoman empire to restore serbia as an independent nation. 
+#What follows is either: 
+#A. A new Russo-Turkish war which escelates to have germany and austria intervene.
+#B. A restored serbia which proceeds to have franz ferdinand shot.
+
+country_event = { #Russia is asked if they want to intervene on Serbia's part - AI should always accept
+	id = ww1_russoturkish.1
+	title = ww1_russoturkish.1.t
+	desc = ww1_russoturkish.1.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1914.01.01
+		date < 1914.04.01
+		tag = RUS
+		SER = { exists = no }
+		TUR = { exists = yes }
+		TUR = { controls_state = 107 }
+		RUS = { NOT = { has_war_with = GER }  }
+		RUS = { NOT = { has_war_with = SOV }  }
+	}
+	
+	option = {	#Let's Restore Serbia.
+		name = ww1_russoturkish.1.o1
+		TUR = { country_event = { days = 4 id = ww1_russoturkish.2 } }
+		ai_chance = { factor = 100 }
+	}
+	option = {	#The most disadvantageous peace is better than the most just war.
+		name = ww1_russoturkish.1.o2
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #Ottomans have 2 choices: Either restore serbia or face war.
+	id = ww1_russoturkish.2
+	title = ww1_russoturkish.2.t
+	desc = ww1_russoturkish.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {	#Let's respect Serbia's wishes
+		name = ww1_russoturkish.2.o1
+		SER = { transfer_state = 107 }
+		ai_chance = { factor = 50 }
+	}
+	option = {	#Those Russians can rot in hell!
+		name = ww1_russoturkish.2.o2
+		RUS = { declare_war_on = { target = TUR } }
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = { #Russia sinks a german ship - Germany declares war.
+	id = ww1_russoturkish.3
+	title = ww1_russoturkish.3.t
+	desc = ww1_russoturkish.3.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date < 1914.04.01
+		date > 1914.01.01
+		tag = GER
+		RUS = { exists = yes }
+		TUR = { exists = yes }
+		RUS = { has_war_with = TUR  }
+		RUS = { NOT = { has_war_with = GER }  }
+		RUS = { NOT = { has_war_with = SOV }  }
+	}
+	
+	option = {	#This means war!
+		name = ww1_russoturkish.3.o1
+		declare_war_on = { target = RUS type = annex_everything }
+		ai_chance = { factor = 100 }
+	}
+	option = {	#Let's not escelate things.
+		name = ww1_russoturkish.3.o2
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #Russia sinks a Austro-Hungarian ship - Austria declares war.
+	id = ww1_russoturkish.4
+	title = ww1_russoturkish.4.t
+	desc = ww1_russoturkish.4.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date < 1914.04.01
+		date > 1914.01.01
+		tag = AUH
+		RUS = { exists = yes }
+		TUR = { exists = yes }
+		RUS = { has_war_with = TUR  }
+		RUS = { NOT = { has_war_with = AUH }  }
+		RUS = { NOT = { has_war_with = SOV }  }
+	}
+	
+	option = {	#This means war!
+		name = ww1_russoturkish.3.o1
+		declare_war_on = { target = RUS type = annex_everything }
+		ai_chance = { factor = 100 }
+	}
+	option = {	#Let's not escelate things.
+		name = ww1_russoturkish.3.o2
+		ai_chance = { factor = 0 }
+	}
+}

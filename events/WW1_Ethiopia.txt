@@ -35,3 +35,63 @@ country_event = {
 			}
 		}
 	}
+
+country_event = {
+	title=ww1_ethiopia.2.t#Iyasu V Dies!
+	desc=ww1_ethiopia.2.d#Iyasu V has died before he could join the central powers. Zewditu is now Empress. Should we join the central powers anyway?
+	id=ww1_ethiopia.2
+	picture=ww1_ethiopia_2
+	fire_only_once=yes
+	is_triggered_only=no
+	mean_time_to_happen={
+		days=1
+		}
+	trigger={
+		tag=ETH
+		has_government=neutrality
+		not={
+			has_country_flag=iyasu_died
+			}
+		date>1915.9.27
+		}
+	option={
+	#stay neutral
+		name=ww1_ethiopia.2.a
+		ai_chance={
+			factor=50
+			}
+		set_country_flag=iyasu_died
+		kill_country_leader=yes
+		create_country_leader={
+			name="Zewditu I"
+			desc=ETH_zewditu_I_DESC
+			picture="gfx/leaders/ETH_zewditu.dds"
+			expire="1935.1.1"
+			ideology=despotism
+			traits={
+				}
+			}
+		}
+	#join central powers
+	option={
+		name=ww1_ethiopia.2.b
+		trigger = { GER = { has_war_with = ITA } }
+		ai_chance={
+			factor=50
+			}
+		set_country_flag=iyasu_died
+		kill_country_leader=yes
+		create_country_leader={
+			name="Zewditu I"
+			desc=ETH_zewditu_I_DESC
+			picture="gfx/leaders/ETH_zewditu.dds"
+			expire="1935.1.1"
+			ideology=despotism
+			traits={
+				}
+			}
+		GER = { add_to_faction = ETH }
+		ETH = { declare_war_on = { target = ITA type = annex_everything } }
+		}
+	}
+

@@ -681,7 +681,7 @@ news_event = {
 				create_faction = "White Movement"
 				set_global_flag = kis_whitesvsreds
 				kill_country_leader = yes
-				create_country_leader={ name = "Alexander Kolchak" desc=RUS_kolchak_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds" expire="1935.1.1" ideology=fascism_ideology traits={ } }
+				create_country_leader={ name = "Alexander Kolchak" desc=RUS_kolchak_ii_DESC picture="gfx/hoi4tgw_portraits/RUS/navy_admirals/RUS_kolchak.dds" expire="1935.1.1" ideology=national_democrat traits={ } }
 				set_politics = {
 				    parties = {
 				        neutrality = {
@@ -690,14 +690,14 @@ news_event = {
 				        democratic = {
 				            popularity = 0
 				        }
-				        fascism = {
+				        nationalist = {
 				            popularity = 100
 				        }
 				        communism = {
 				            popularity = 0
 				        }
 				    }
-				    ruling_party = fascism last_election = "1912.9.1"
+				    ruling_party = nationalist last_election = "1912.9.1"
 				    election_frequency = 60 elections_allowed = no
 				}
 

@@ -267,6 +267,7 @@ country_event = {
 		TUR = {
 			has_war_with = SER
 			NOT = {
+				has_war_with = FRA
 				controls_state = 44
 				controls_state = 106
 				controls_state = 184

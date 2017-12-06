@@ -15,11 +15,7 @@ news_event = {
 		date < 1914.9.1
 		NOT = { has_global_flag = kis_franzferdinand_murdered }
 		NOT = { has_global_flag = kis_fra_war_ger } # Set by France
-		country_exists=SER
-		SER = {
-        	is_puppet = no 
-        	has_war = no
-        }		
+		country_exists=SER		
 		GER = {
         	is_puppet = no 
         	exists = yes
@@ -39,6 +35,7 @@ news_event = {
 			AUH = {
 				set_country_flag=murder_of_franz_ferdinand
 			}
+			end_puppet = SER
             HUN = {
                 kill_country_leader = yes
                 create_country_leader={ name = "Karl I" desc=AUH_karl_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds" expire="1935.1.1" ideology=autocracy  traits={  } }
@@ -99,7 +96,6 @@ country_event = {
 		tag = SER
 		country_exists=AUH
 		has_global_flag = kis_franzferdinand_murdered
-		has_war=no
 		date > 1914.6.28
 
 		NOT = {

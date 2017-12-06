@@ -1,0 +1,76 @@
+﻿###########################
+# Persian Events
+###########################
+
+add_namespace = ww1_nejd
+
+country_event = { #Initiates the Unification of Arabia
+	id = ww1_nejd.1
+	title = ww1_nejd.1.t
+	desc = ww1_nejd.1.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1915.12.01
+		tag = SAU
+		country_exists = SAU
+		country_exists = JBS
+		country_exists = HJZ
+		HJZ = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#Invade Jabal Shammar!
+		name = ww1_nejd.1.o1
+		declare_war_on = { target = JBS type = annex_everything }
+		JBS = { declare_war_on = { target = SAU type = annex_everything } }
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #If Nejd won
+	id = ww1_nejd.2
+	title = ww1_nejd.2.t
+	desc = ww1_nejd.2.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1915.12.01
+		tag = SAU
+		SAU = { exists = yes }
+		JBS = { exists = no }
+		HJZ = { exists = yes }
+		HJZ = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#Invade Hejaz!
+		name = ww1_nejd.2.o1
+		declare_war_on = { target = HJZ type = annex_everything }
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #If Jabal won
+	id = ww1_nejd.3
+	title = ww1_nejd.3.t
+	desc = ww1_nejd.3.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1915.12.01
+		tag = JBS
+		SAU = { exists = no }
+		JBS = { exists = yes }
+		HJZ = { exists = yes }
+		HJZ = { NOT = { has_war_with = GER }  }
+	}
+	
+	option = {	#Invade Hejaz!
+		name = ww1_nejd.3.o1
+		declare_war_on = { target = HJZ type = annex_everything }
+		ai_chance = { factor = 100 }
+	}
+}
+
