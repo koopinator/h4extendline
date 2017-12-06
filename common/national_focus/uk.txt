@@ -702,15 +702,12 @@ focus_tree = {
 				exists = yes
 				is_puppet_of = ENG
 			}
-
-
-		  	date>1917.1.1
 	   		date<1925.12.30
 	  	}
 		completion_reward = {
-			HJZ={
-		   		country_event=ww1_hejaz.8
-		   	}
+			HJZ = { transfer_state = 353 }
+			HJZ = { load_oob = HJZ_1914 }
+			HJZ = { declare_war_on = { target = TUR type = annex_everything } }
 	  		set_global_flag=te_lawrence
 		}
 		ai_will_do = { factor = 20 }
