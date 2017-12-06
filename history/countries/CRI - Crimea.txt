@@ -68,7 +68,7 @@ create_field_marshal={  name = "Jaffer Siedamet Kirimer" portrait_path="gfx/lead
 		# Industry
 	}
 
-	set_politics={  parties={ democratic={ popularity=90 }  neutrality={ popularity=0 }  communism={ popularity=10 } }  ruling_party=democratic last_election="1907.10.13" election_frequency=60 elections_allowed=yes }
+	set_politics={  parties={ democratic={ popularity=80 }  nationalist={ popularity=10 }  communism={ popularity=10 } }  ruling_party=democratic last_election="1907.10.13" election_frequency=60 elections_allowed=yes }
 
 	add_ideas = {
 

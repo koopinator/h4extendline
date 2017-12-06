@@ -12,7 +12,7 @@ set_convoys = 5
 #-------------------------------------------------------
 create_country_leader={ name = "Aleksandar Stamboliyski" desc=BUL_aleksandar_stamboliyski_DESC picture="gfx/leaders/BUL_aleksandar_stamboliyski.dds" expire="1935.1.1" ideology=marxism traits={  } }
 create_country_leader={ name = "Dimitar Blagoev" desc=BUL_dimitar_blagoev_DESC picture="gfx/leaders/BUL_dimitar_blagoev.dds" expire="1935.1.1" ideology=stalinism traits={  } }
-create_country_leader={ name = "Ferdinand I" desc=BUL_ferdinand_i_DESC picture="gfx/leaders/BUL_ferdinand_i.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Ferdinand I" desc=BUL_ferdinand_i_DESC picture="gfx/leaders/BUL_ferdinand_i.dds" expire="1935.1.1" ideology=autocrat  traits={  } }
 
 #create_corps_commander={  name = "Dimitriev I." id=12014 portrait_path="gfx/generals/BUL_dimitriev_i.tga" traits={   } skill=1 }
 #create_corps_commander={  name = "Genev" id=12019 portrait_path="gfx/generals/BUL_genev.tga" traits={ winter_specialist commando } skill=2 }
@@ -125,11 +125,11 @@ create_navy_leader={  name = "Serafimov" id=12081 portrait_path="gfx/admiral/BUL
 	        communism = {
 	            popularity = 0
 	        }
-	        neutrality = {
+	        nationalist = {
 	            popularity = 80
 	        }
 	    }
-	    ruling_party = neutrality last_election = "1907.12.22"
+	    ruling_party = nationalist last_election = "1907.12.22"
 	    election_frequency = 48 elections_allowed = yes
 	}
 
@@ -285,11 +285,11 @@ create_navy_leader={  name = "Serafimov" id=12081 portrait_path="gfx/admiral/BUL
 	        communism = {
 	            popularity = 0
 	        }
-	        neutrality = {
+	        nationalist = {
 	            popularity = 80
 	        }
 	    }
-	    ruling_party = neutrality last_election = "1913.12.31"
+	    ruling_party = nationalist last_election = "1913.12.31"
 	    election_frequency = 48 elections_allowed = yes
 	}
 

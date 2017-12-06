@@ -12,9 +12,9 @@ set_convoys = 200
 #-------------------------------------------------------
 #LEADERS
 create_country_leader={ name = "Viktor Adler" desc=AUH_viktor_adler_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_viktor_adler.dds" expire="1935.1.1" ideology=marxism traits={  } }
-create_country_leader={ name = "Franz Ferdinand" desc=AUH_franz_ferdinand_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_ferdinand.dds" expire="1935.1.1" ideology=despotism  traits={  } }
-#create_country_leader={ name = "Karl I" desc=AUH_karl_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds" expire="1935.1.1" ideology=autocracy  traits={  } }
-create_country_leader={ name = "Franz Joseph I" desc=AUH_franz_joseph_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_joseph_i.dds" expire="1935.1.1" ideology=autocracy traits={  } }
+create_country_leader={ name = "Franz Ferdinand" desc=AUH_franz_ferdinand_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_ferdinand.dds" expire="1935.1.1" ideology=autocrat  traits={  } }
+#create_country_leader={ name = "Karl I" desc=AUH_karl_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_karl_i.dds" expire="1935.1.1" ideology=autocrat  traits={  } }
+create_country_leader={ name = "Franz Joseph I" desc=AUH_franz_joseph_i_DESC picture="gfx/hoi4tgw_portraits/AUH/country_leaders/AUH_franz_joseph_i.dds" expire="1935.1.1" ideology=autocrat traits={  } }
 
 #ARMY
 create_field_marshal={  name = "Conrad von Hötzendorf" id=6137 portrait_path="gfx/hoi4tgw_portraits/AUH/army_generals/AUH_von_Hotzendorf.dds" traits={ offensive_doctrine  } skill=3 }
@@ -126,7 +126,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 	set_politics = {
 	    parties = {
 	        neutrality = {
-	            popularity = 85
+	            popularity = 0
 	        }
 	        fascism = {
 	            popularity = 5
@@ -137,8 +137,11 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 	        communism = {
 	            popularity = 5
 	        }
+	        nationalist = {
+	            popularity = 85
+	        }
 	    }
-	    ruling_party = neutrality last_election = "1907.5.23"
+	    ruling_party = nationalist last_election = "1907.5.23"
 	    election_frequency = 48 elections_allowed = yes
 	}
 
@@ -293,7 +296,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 
 	set_politics = {
 	    parties = {
-	        neutrality = {
+	        nationalist = {
 	            popularity = 85
 	        }
 	        fascism = {
@@ -306,7 +309,7 @@ create_navy_leader={  name = "Miklós Horthy" id=6394 portrait_path="gfx/hoi4tgw
 	            popularity = 5
 	        }
 	    }
-	    ruling_party = neutrality last_election = "1911.7.1"
+	    ruling_party = nationalist last_election = "1911.7.1"
 	    election_frequency = 48 elections_allowed = yes
 	}
 

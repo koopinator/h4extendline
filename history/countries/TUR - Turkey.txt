@@ -28,11 +28,11 @@ puppet = HJZ
 
 create_country_leader={ name = "Mehmed VI" desc=TUR_mehmed_vi_DESC picture="gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mehmed_vi.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 
-create_country_leader={ name = "Mustafa Kemal" desc=TUR_mustafa_kemal_DESC picture="gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mustafa_kemal.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Mustafa Kemal" desc=TUR_mustafa_kemal_DESC picture="gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mustafa_kemal.dds" expire="1935.1.1" ideology=autocrat  traits={  } }
 
 #create_country_leader={ name = "Mustafa Suphi" desc=TUR_mustafa_suphi_DESC picture="gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mustafa_suphi.dds" expire="1935.1.1" ideology=leninism traits={  } }
 
-create_country_leader={ name = "Mehmed V" desc=TUR_mehmed_v_DESC picture="gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mehmed_v.dds" expire="1935.1.1" ideology=despotism  traits={  } }
+create_country_leader={ name = "Mehmed V" desc=TUR_mehmed_v_DESC picture="gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mehmed_v.dds" expire="1935.1.1" ideology=autocrat  traits={  } }
 create_country_leader={ name = "Mehmed V" desc=TUR_mehmed_v_DESC picture="gfx/hoi4tgw_portraits/TUR/country_leaders/TUR_mehmed_v.dds" expire="1935.1.1" ideology=nazism  traits={  } }
 
 
@@ -149,11 +149,11 @@ create_navy_leader={  name = "Arif Paşa" id=90097 portrait_path="gfx/hoi4tgw_po
 	        communism = {
 	            popularity = 0
 	        }
-	        neutrality = {
+	        nationalist = {
 	            popularity = 75
 	        }
 	    }
-	    ruling_party = neutrality last_election = "1908.12.1"
+	    ruling_party = nationalist last_election = "1908.12.1"
 	    election_frequency = 48 elections_allowed = yes
 	}
 
@@ -309,11 +309,11 @@ create_navy_leader={  name = "Arif Paşa" id=90097 portrait_path="gfx/hoi4tgw_po
 	        communism = {
 	            popularity = 0
 	        }
-	        neutrality = {
+	        nationalist = {
 	            popularity = 75
 	        }
 	    }
-	    ruling_party = neutrality last_election = "1912.4.1"
+	    ruling_party = nationalist last_election = "1912.4.1"
 	    election_frequency = 48 elections_allowed = yes
 	}
 

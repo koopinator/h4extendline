@@ -19,13 +19,13 @@ add_to_faction = BOS
 #					POLITICS & ARMY
 #-------------------------------------------------------
 #LEADERS
-create_country_leader={ name = "Wilhelm III" desc=GER_wilhelm_iii_DESC picture="gfx/leaders/GER_wilhelm_iii.dds" expire="1935.1.1" ideology=autocracy  traits={  } }
+create_country_leader={ name = "Wilhelm II" desc=GER_wilhelm_ii_DESC picture="gfx/leaders/GER_wilhelm_ii.dds" expire="1935.1.1" ideology=autocrat traits={  } }
 create_country_leader={ name = "Paul von Hindenburg" desc=GER_paul_von_hindenburg_DESC picture="gfx/leaders/GER_paul_von_hindenburg.dds" expire="1935.1.1" ideology=conservatism  traits={  } }
 create_country_leader={ name = "Adolf Hitler" desc=GER_adolf_hitler_DESC picture="gfx/leaders/GER_adolf_hitler.dds" expire="1935.1.1" ideology=nazism traits={  } }
 create_country_leader={ name = "Erich Ludendorff" desc=GER_erich_ludendorff_DESC picture="gfx/leaders/GER_erich_ludendorff.dds" expire="1935.1.1" ideology=fascism_ideology traits={  } }
 create_country_leader={ name = "Friedrich Ebert" desc=GER_friedrich_ebert_DESC picture="gfx/leaders/GER_friedrich_ebert.dds" expire="1935.1.1" ideology=liberalism traits={  } }
 create_country_leader={ name = "Karl Liebknecht" desc=GER_karl_liebknecht_DESC picture="gfx/leaders/GER_karl_liebknecht.dds" expire="1935.1.1" ideology=marxism  traits={  } }
-create_country_leader={ name = "Wilhelm II" desc=GER_wilhelm_ii_DESC picture="gfx/leaders/GER_wilhelm_ii.dds" expire="1935.1.1" ideology=autocracy traits={  } }
+
 
 #ARMY
 create_field_marshal={  name = "Bock" id=34013 portrait_path="gfx/fieldmarshal/GER_bock.dds" traits={   } skill=2 }
@@ -153,10 +153,13 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 	            popularity = 2
 	        }
 	        neutrality = {
+	            popularity = 0
+	        }
+	        nationalist = {
 	            popularity = 80
 	        }
 	    }
-	    ruling_party = neutrality last_election = "1907.1.25"
+	    ruling_party = nationalist last_election = "1907.1.25"
 	    election_frequency = 60 elections_allowed = yes
 	}
 
@@ -325,11 +328,11 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 	        communism = {
 	            popularity = 1
 	        }
-	        neutrality = {
+	        nationalist = {
 	            popularity = 80
 	        }
 	    }
-	    ruling_party = neutrality last_election = "1912.1.12"
+	    ruling_party = nationalist last_election = "1912.1.12"
 	    election_frequency = 60 elections_allowed = yes
 	}
 
