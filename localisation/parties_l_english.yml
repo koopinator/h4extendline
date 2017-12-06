@@ -45,6 +45,18 @@
  moderatism_desc:0 "Moderatism is a form of government which avoids the extremes of left and right by taking a moderate position or course of action."
  centrism:0 "Centrism"
  centrism_desc:0 "Centrism is a form of government which wants to achieve common sense solutions that appropriately address current and future needs, that support the public trust and serve the common good with consideration of risk and capacity in context of these needs."
+ anarchism:0 "Anarchist"
+ anarchism_desc:0 "Anarchism advocates for self-governed societies based on voluntary institutions. Anarchism holds the state to be undesirable, unnecessary, and harmful."
+ libertarian:0 "Libertarian"
+ libertarian_desc:0 "Libertarians are fiscally conservative and socially progressive. They want to keep government power low and personal freedom vast. Libertarians want low taxes and as little government intervention in the economy as possible. They are great for the wealth of the nation, but horrible at defending it during wartime."
+ nationalist:0 "Nationalist"
+ nationalist_noun:0 "Nationalism"
+ nationalist_desc:0 "Nationalistic Government"
+ national_democrat:0 "National Democracy"
+ national_democrat_desc:0 "National Democrats, though believing in the ideals of the French Revolution, want to limit these ideals to only a certain group of people, either dividing them by heritage or by language."
+ autocrat:0 "Autocrat"
+ autocrat_desc:0 "Autocrats do not care about ideology, they only care about power and how to acquire and maintain it. Reactionary schools of thought are used to suppress liberal, communist and nationalistic movements. Every path to power is justified."
+
 
  GER_fascism_party:0 "Völkisch"
  GER_fascism_party_long:0 "Völkisch Movement"
