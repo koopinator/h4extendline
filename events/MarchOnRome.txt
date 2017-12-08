@@ -1,0 +1,49 @@
+﻿
+add_namespace = marchonrome
+
+
+# Mussolini's request
+#____________________________________________________________
+country_event = {
+	id = marchonrome.1
+	title = marchonrome.1.t
+	desc = marchonrome.1.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once=yes
+
+	trigger = {
+		tag = ITA
+		date > 1922.10.22
+		date < 1923.3.01
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = marchonrome.1.o1 #Accept - Civil war avoided
+		ai_chance = { factor = 50 }
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.70
+		}
+	}
+
+	option = {
+		name = marchonrome.1.o2 #Civil war has begun
+		add_timed_idea = { idea = marchonrome days = 300 }
+		ai_chance = { factor = 50 }
+				start_civil_war = {
+				ideology = fascism
+				size = 0.7
+				states = { 117 158 159 160 }
+			}
+	}
+}
+#____________________________________________________________

@@ -13,6 +13,7 @@ country_event = { #Russia is asked if they want to invade persia
 	
 	trigger = {
 		date > 1911.12.01
+		date < 1912.12.01
 		tag = RUS
 		RUS = { NOT = { has_war_with = GER }  }
 	}
