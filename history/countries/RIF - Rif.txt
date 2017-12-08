@@ -1,0 +1,62 @@
+﻿capital=290
+oob="RIF_1910"
+
+#Army
+complete_national_focus = army_effort
+complete_national_focus = equipment_effort
+
+#Industrial
+complete_national_focus = industrial_effort
+complete_national_focus = infrastructure_effort
+
+#Political
+complete_national_focus = political_effort
+complete_national_focus = collectivist_ethos
+unlock_national_focus = internationalism_focus
+
+#Diplomatic
+complete_national_focus = ww1_diplomatic_effort
+complete_national_focus = neutrality_focus
+
+
+set_technology={ 
+
+	light_field_gun1=1
+	 
+	heavy_field_gun1=1
+	#KiS #heavy_howitzer1=1
+	motorised_infantry = 1 #KiS #siege_artillery1=1
+	electronic_mechanical_engineering=1
+	infantry_weapons=1
+	ww1_destroyer0=1
+	ww1_destroyer1=1
+	#KiS=1
+	#KiS=1
+	 
+	#KiS early_protected_cruiser=1
+	ww1_light_cruiser1=1
+	ww1_light_cruiser0=1
+	 
+	 
+	 
+	#KiS=1
+	ww1_battleship0=1
+	ww1_battleship1=1
+	#early_dreadnought=1
+	transport=1
+	ww1_submarine1=1 ww1_coastal_submarine1=1
+	ww1_submarine2=1 ww1_coastal_submarine2=1
+	tech_support=1
+	tech_engineers=1
+	tech_recon=1
+	#tech_military_police=1
+	#tech_maintenance_company=1
+	#tech_field_hospital=1
+	#tech_logistics_company=1
+	#KiS #tech_signal_company=1
+	}
+set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=0 }  communism={ popularity=0  }  nationalist={ popularity=100 } }  ruling_party=nationalist last_election="1910.1.1" election_frequency=48 elections_allowed=yes }
+create_country_leader={ name = "Abd el-Krim" desc=ARG_elKrim_DESC picture="gfx/leaders/RIF/RIF_abdelkrim.dds" expire="1963.1.1" ideology=national_democrat  traits={  } }
+set_national_unity=0.95
+
+add_ideas={ ww1_Faith_Allah }
