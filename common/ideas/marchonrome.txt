@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+
+
+	marchonrome = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_focus_aggressive_factor = 2.0
+				offence = 50.0
+			}
+		}
