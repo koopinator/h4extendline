@@ -104,7 +104,7 @@ country_event = {
 }
 #____________________________________________________________
 
-# Tsar Nicholas Abdicates! + Soviet Revolution
+# Tsar Nicholas Abdicates! + Russian civil war round 1
 #____________________________________________________________
 news_event = {
 	id = ww1_russia.4
@@ -650,7 +650,7 @@ country_event = {
 #____________________________________________________________
 
 
-#  The Russian Civil War
+#  The Russian Civil War - Round 2
 #____________________________________________________________
 news_event = {
 	id = ww1_russia.20
@@ -850,11 +850,12 @@ country_event = { #quick russian civil war thing please ignore
 	}
 	
 	option = {	#end this ahistoric war
-			name = protectionwar.23.o1
+			name = ww1_russia.23.o1
 			SOV = { country_event = { days = 3 id = ww1_soviet.2 } }
 		    SOV = { country_event = { days = 50 id = ww1_russia.26 } }
 		    SOV = { country_event = { days = 100 id = ww1_russia.24 } }
 		    SOV = { country_event = { days = 200 id = ww1_russia.25 } }
+		    SOV = { country_event = { days = 300 id = ww1_russia.31 } }
 			SOV = { declare_war_on = { target = RUS type = annex_everything } }
 			SOV = { declare_war_on = { target = UKR type = annex_everything } }
 			SOV = { load_oob = SOV_civilwaroob }
@@ -973,5 +974,84 @@ country_event = { #North Basmachi uprising
 	}
 }
 
+country_event = { #Russian civil war - Round 3
+	id = ww1_russia.29
+	title = ww1_russia.29.t
+	desc = ww1_russia.29.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {	#Ready for round 3?
+			name = ww1_russia.29.o1
+			SOV = { declare_war_on = { target = RUS type = annex_everything } }
+			JAP = { declare_war_on = { target = SOV type = annex_everything } }
+			RUS = { load_oob = RUS_round3 }
+			RUS = { transfer_state = 574 }
+			RUS = { transfer_state = 644 }
+			RUS = { transfer_state = 562 }
+	}
+}
+
+country_event = { #Japan peaces out
+	id = ww1_russia.30
+	title = ww1_russia.30.t
+	desc = ww1_russia.30.d
+	fire_only_once = yes
+
+	trigger = {
+	    SOV = { exists = yes }
+	    JAP = { exists = yes }
+	    RUS = { exists = yes }
+	    RUS = { surrender_progress > 0.7 }
+	    JAP = { has_war_with = SOV }
+	    tag = JAP
+	    date < 1930.1.1
+	}
+	
+	option = {	
+			name = ww1_russia.29.o1
+			white_peace = SOV
+	}
+}
+
+country_event = { #Karelian uprising
+	id = ww1_russia.31
+	title = ww1_russia.31.t
+	desc = ww1_russia.31.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {	#it begins
+			name = ww1_russia.28.o1
+			SOV = { declare_war_on = { target = KAR type = annex_everything } }
+			KAR = { transfer_state = 216 }
+			KAR = { transfer_state = 215 }
+			KAR = { load_oob = KAR_1918 }
+	}
+}
+
+country_event = { #Soviets win the russian civil war, Japan intervenes.
+	id = ww1_russia.32
+	title = ww1_russia.32.t
+	desc = ww1_russia.32.d
+	fire_only_once = yes
+
+	trigger = {
+	    SOV = { exists = yes }
+	    JAP = { exists = yes }
+	    RUS = { exists = yes }
+	    RUS = { surrender_progress > 0.9 }
+	    RUS = { has_war_with = SOV }
+	    tag = SOV
+	    date < 1930.1.1
+	}
+	
+	option = {	
+			name = ww1_russia.29.o1
+			SOV = { annex_country = { target = RUS } }
+			SOV = { country_event = { days = 15 id = ww1_russia.31 } }
+			SOV = { declare_war_on = { target = AZR type = annex_everything } }
+	}
+}
 
 #____________________________________________________________

@@ -192,6 +192,8 @@ country_event = {
 
 
 				BEL = {
+
+				annex_country = { target = BEL }
 					kill_country_leader = yes
 
 					create_country_leader = {
@@ -290,6 +292,10 @@ country_event = {
 					transfer_state = 755	# Cameroon
 					transfer_state = 752	# Cameroon
 				}
+
+				FRA = { 
+				annex_country = { target = FRA }
+				}
 			}
 
 			if = {
@@ -311,6 +317,10 @@ country_event = {
 				}
 				GER = {
 					transfer_state = 763		# Walwis Bay
+				}
+
+				ENG = { 
+				annex_country = { target = ENG }
 				}
 			}
 
@@ -342,6 +352,10 @@ country_event = {
 				}
 				BUL = {
 					transfer_state = 759		# EAST MACEDONIA
+				}
+
+				SER = { 
+				annex_country = { target = SER }
 				}
 			}
 

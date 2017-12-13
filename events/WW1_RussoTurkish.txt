@@ -63,8 +63,7 @@ country_event = { #Russia sinks a german ship - Germany declares war.
 	fire_only_once = yes
 	
 	trigger = {
-		date < 1914.04.01
-		date > 1914.01.01
+		date < 1916.04.01
 		tag = GER
 		RUS = { exists = yes }
 		TUR = { exists = yes }
@@ -92,8 +91,7 @@ country_event = { #Russia sinks a Austro-Hungarian ship - Austria declares war.
 	fire_only_once = yes
 	
 	trigger = {
-		date < 1914.04.01
-		date > 1914.01.01
+		date < 1916.04.01
 		tag = AUH
 		RUS = { exists = yes }
 		TUR = { exists = yes }
@@ -109,6 +107,31 @@ country_event = { #Russia sinks a Austro-Hungarian ship - Austria declares war.
 	}
 	option = {	#Let's not escelate things.
 		name = ww1_russoturkish.3.o2
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #When the ottoman empire is fighting with russia, They join the central powers if the central powers share their war.
+	id = ww1_russoturkish.5
+	title = ww1_russoturkish.5.t
+	desc = ww1_russoturkish.5.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUR
+		is_in_faction = no
+		RUS = { has_war_with = TUR  }
+		RUS = { has_war_with = GER  }
+	}
+	
+	option = {	#Good idea
+		name = ww1_russoturkish.5.o1
+		GER = { add_to_faction = TUR }
+		ai_chance = { factor = 100 }
+	}
+	option = {	#Let's not escelate things.
+		name = ww1_russoturkish.5.o2
 		ai_chance = { factor = 0 }
 	}
 }

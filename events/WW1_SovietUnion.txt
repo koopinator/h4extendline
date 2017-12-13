@@ -63,10 +63,6 @@ news_event = {
 				}
 			}
 		}
-		SOV = { declare_war_on = { target = ARM type = annex_everything } }
-		SOV = { declare_war_on = { target = AZR type = annex_everything } }
-		SOV = { declare_war_on = { target = GEO type = annex_everything } }
-		SOV = { declare_war_on = { target = RNC type = annex_everything } }
 		SOV = { declare_war_on = { target = MON type = annex_everything } }
 		RUS = { add_to_faction = MON }
 		MON = { add_to_war = { targeted_alliance = RUS enemy = SOV } }
