@@ -705,9 +705,10 @@ focus_tree = {
 	   		date<1925.12.30
 	  	}
 		completion_reward = {
-			HJZ = { transfer_state = 353 }
+			HJZ = { transfer_state = 679 }
 			HJZ = { load_oob = HJZ_1914 }
 			HJZ = { declare_war_on = { target = TUR type = annex_everything } }
+			add_to_faction = HJZ
 	  		set_global_flag=te_lawrence
 		}
 		ai_will_do = { factor = 20 }
