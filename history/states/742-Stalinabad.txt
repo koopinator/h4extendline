@@ -10,6 +10,13 @@ state={
 		}
 		add_core_of = RUS
 		add_core_of = BAS
+		1919.1.1={ 
+			owner=BAS
+			add_core_of=BAS
+			buildings={
+				infrastructure=1
+				}
+			}
 
 	}
 

@@ -13,6 +13,13 @@ state={
 		owner=RUS
 		add_core_of=RUS
 		add_core_of=KAR
+		1919.1.1={ 
+			owner=KAR
+			add_core_of=KAR
+			buildings={
+				infrastructure=1
+				}
+			}
 		1936.1.1={ 
 			owner=SOV
 			add_core_of=SOV

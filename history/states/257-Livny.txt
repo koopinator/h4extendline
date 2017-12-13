@@ -12,6 +12,13 @@ state={
 		owner=RUS
 		add_core_of=RUS
 		add_core_of=GRN
+		1919.1.1={ 
+			owner=GRN
+			add_core_of=GRN
+			buildings={
+				infrastructure=1
+				}
+			}
 		1936.1.1={ 
 			owner=SOV
 			add_core_of=SOV
