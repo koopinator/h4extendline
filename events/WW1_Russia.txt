@@ -845,6 +845,7 @@ country_event = { #quick russian civil war thing please ignore
 	trigger = {
 	    tag = RUS
 	    RUS = { NOT =  { has_war_with = GER } }
+	    RUS = { NOT =  { has_war_with = SOV } }
 	    country_exists = SOV
 	    country_exists = RUS
 	}

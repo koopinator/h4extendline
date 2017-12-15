@@ -168,3 +168,46 @@ country_event = {
 	}
 }
 #____________________________________________________________
+
+
+#Trigger for 1920 Revolt so it doesn't trigger in the 1920 start
+country_event = {
+	id = ww1_england.21
+	title = "Iraq revolts against british rule!"
+	desc = "The Iraqi people do not accept britain's decision to occupy iraq. Tribal leaders have agreed to start an organized revolt."
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once=yes
+	hidden=yes
+
+	trigger = {
+		date > 1919.5.01
+		date < 1919.10.25
+	}
+	
+	option = {
+		name = political.3.a
+		ENG= { country_event = { days = 365 id = ww1_england.22 } }
+	}
+}
+
+#1920 Iraqi revolt
+country_event = {
+	id = ww1_england.22
+	title = "Iraq revolts against british rule!"
+	desc = "The Iraqi people do not accept britain's decision to occupy iraq. Tribal leaders have agreed to start an organized revolt."
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once=yes
+	is_triggered_only=yes
+
+	trigger = {
+		IRQ = { NOT = { has_war_with = ENG }  }
+	}
+	
+	option = {
+		name = ww1_england.22.a
+		IRQ = { transfer_state = 291 }
+		IRQ = { declare_war_on = { target = ENG type = annex_everything } }
+	}
+}
