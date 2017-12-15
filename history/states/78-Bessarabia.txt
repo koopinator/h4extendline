@@ -12,6 +12,17 @@ state={
 		add_core_of=ROM
 		add_core_of=MDV
 		add_core_of=RUS
+		1920.1.1={ 
+			owner=MDV
+			add_core_of=ROM
+			buildings={
+				infrastructure=4
+				industrial_complex=2
+				air_base=2
+				dockyard=1
+				6727={ naval_base=3 }
+				}
+			}
 		1936.1.1={ 
 			owner=ROM
 			add_core_of=ROM
