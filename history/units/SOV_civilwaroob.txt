@@ -480,24 +480,6 @@ units = {
 	}
 	division = {
 		name = "Bolsheviks Infantry Division"
-		location = 11351
-		division_template="Infantry Division"
-		start_experience_factor=0.8
-	}
-	division = {
-		name = "Bolsheviks Infantry Division"
-		location = 11351
-		division_template="Infantry Division"
-		start_experience_factor=0.8
-	}
-	division = {
-		name = "Bolsheviks Infantry Division"
-		location = 11351
-		division_template="Infantry Division"
-		start_experience_factor=0.8
-	}
-	division = {
-		name = "Bolsheviks Infantry Division"
 		location = 6369
 		division_template="Infantry Division"
 		start_experience_factor=0.8
