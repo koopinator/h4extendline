@@ -13,6 +13,10 @@ state={
 		#add_core_of=YUG
 		add_core_of=AUH
 		add_core_of=SLV
+		1919.1.1={ 
+			owner=SLV
+			add_core_of=SLV
+			}
 		1936.1.1={ 
 			owner=YUG
 			add_core_of=YUG

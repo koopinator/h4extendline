@@ -12,6 +12,10 @@ state={
 		victory_points={ 7661 1 }
 		owner=RUS
 		add_core_of=RUS
+		1919.1.1={ 
+			owner=AZR
+			add_core_of=AZR
+			}
 		1936.1.1={ 
 			owner=SOV
 			add_core_of=SOV

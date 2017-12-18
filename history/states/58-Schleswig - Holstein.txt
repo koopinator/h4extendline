@@ -12,6 +12,9 @@ state={
 		victory_points={ 9347 15 }
 		owner=GER
 		add_core_of=GER
+		1919.1.1 = {
+			owner = DDR
+		}
 		1936.1.1={ 
 			owner=GER
 			add_core_of=GER

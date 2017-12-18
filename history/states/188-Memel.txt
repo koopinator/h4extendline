@@ -12,6 +12,10 @@ state={
 		add_core_of=LIT
 		add_core_of=MEM
 		add_core_of=RUS
+		1919.1.1={ 
+			owner=MEM
+			add_core_of=MEM
+			}
 		1936.1.1={ 
 			owner=LIT
 			add_core_of=LIT

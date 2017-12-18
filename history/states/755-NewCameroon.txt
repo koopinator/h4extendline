@@ -10,7 +10,7 @@ state={
 	history={
 		owner=FRA
 		1911.11.4={ owner=GER }
-		1936.1.1={ owner=FRA }
+		1919.1.1={ owner=FRA }
 		buildings={
 			infrastructure=3
 			}

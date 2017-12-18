@@ -12,6 +12,10 @@ state={
 		owner=RUS
 		add_core_of=RUS
 		add_core_of=CRI
+		1919.1.1={ 
+			owner=CRI
+			add_core_of=CRI
+			}
 		1936.1.1={ 
 			owner=SOV
 			add_core_of=SOV

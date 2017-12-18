@@ -15,6 +15,10 @@ state={
 		}
 		owner = RUS
 		add_core_of = RUS
+		1919.1.1={ 
+			owner=GEO
+			add_core_of=GEO
+			}
 		1936.1.1 = {
 			owner = SOV
 			add_core_of = SOV

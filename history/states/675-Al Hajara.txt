@@ -11,6 +11,10 @@ state={
 		owner=TUR
 		add_core_of=IRQ
 		add_core_of=TUR
+		1919.1.1={ 
+			owner=ENG
+			add_core_of=ENG
+			}
 		1936.1.1={ 
 			owner=IRQ
 			add_core_of=IRQ

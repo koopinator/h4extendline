@@ -13,6 +13,10 @@ state={
 		owner=TUR
 		add_core_of=SAU
 		add_core_of=HJZ
+		1919.1.1={ 
+			owner=HJZ
+			add_core_of=HJZ
+			}
 		1936.1.1={ 
 			owner=SAU
 			add_core_of=SAU

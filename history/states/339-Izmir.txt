@@ -23,6 +23,10 @@ state={
 				4112={ naval_base=5 }
 				}
 			}
+		1919.1.1={ 
+			owner=GRE
+			add_core_of=GRE
+			}
 		buildings={
 			infrastructure=4
 			industrial_complex=1

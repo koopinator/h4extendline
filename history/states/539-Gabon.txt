@@ -9,7 +9,7 @@ state={
 		}
 	history={
 		owner=GER
-		1936.1.1={ 
+		1919.1.1={ 
 			owner=FRA
 			victory_points={ 8193 2 }
 			victory_points={ 5139 1 }

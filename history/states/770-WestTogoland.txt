@@ -11,7 +11,7 @@ state={
 		victory_points={ 8039 1 }
 		owner=GER
 		add_core_of=GER
-		1936.1.1={ owner=ENG }
+		1919.1.1={ owner=ENG }
 		buildings={
 			infrastructure=3
 			#12785={ naval_base=1  }

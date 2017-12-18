@@ -13,6 +13,10 @@ state={
 		owner=RUS
 		add_core_of=RUS
 		add_core_of=RNC
+		1919.1.1={ 
+			owner=RNC
+			add_core_of=RNC
+			}
 		1936.1.1={ 
 			owner=SOV
 			add_core_of=SOV
