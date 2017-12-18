@@ -1,0 +1,99 @@
+﻿
+###################################################################
+
+division_template = {
+	name = "Militia"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+
+
+###################################################################
+
+units = {
+	division= { 
+			name = "Rebel militia"
+			location = 241
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 3326
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 374
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 9347
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 317
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 6389
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 11305
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 321
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 9388
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 6282
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 6377
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 266
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Rebel militia"
+			location = 6488
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	}
+air_wings = { 
+	}
+instant_effect = {
+add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "ELS" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	}

@@ -1,0 +1,194 @@
+﻿
+###################################################################
+
+division_template = {
+	name = "Infanterie Division"	# Infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Hussars"		# Cavalry
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+###################################################################
+
+units = {
+    division = {
+        name = "Infanterie-Division"
+        location = 6488
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6488
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6488
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6488
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6488
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6521
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6521
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6521
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6521
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Infanterie-Division"
+        location = 6521
+        division_template = "Infanterie Division"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Hussars"
+        location = 3512
+        division_template = "Hussars"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Hussars"
+        location = 3512
+        division_template = "Hussars"
+        start_experience_factor = 0.2
+    }
+    division = {
+        name = "Hussars"
+        location = 3512
+        division_template = "Hussars"
+        start_experience_factor = 0.2
+    }
+}
+
+
+    
+air_wings = {
+    55 = {
+        ww1_fighter_equipment_1 = { owner = "GER" amount = 137 }
+        ww1_zeppelin_equipment_1 = { owner = "GER" amount = 14 }
+    }
+}
+instant_effect = {
+    add_equipment_production = {
+        equipment = {
+            type = infantry_equipment_0 creator = "GER"
+        }
+        requested_factories = 1 progress = 0.1 efficiency = 50
+    }
+    add_equipment_production = {
+        equipment = {
+            type = support_equipment_1 creator = "GER"
+        }
+        requested_factories = 1 progress = 0.1 efficiency = 50
+    }
+    add_equipment_production = {
+        equipment = {
+            type = light_field_gun_equipment_1 creator = "GER"
+        }
+        requested_factories = 1 progress = 0.1 efficiency = 50
+    }
+    add_equipment_production = {
+        equipment = {
+            type = motorized_equipment_0 creator = "GER"
+        }
+        requested_factories = 1 progress = 0.1 efficiency = 50
+    }
+    add_equipment_production = {
+        equipment = {
+            type = battleship_1906 creator = "GER"
+        }
+    }
+    add_equipment_production = {
+        equipment = {
+            type = battleship_1906 creator = "GER"
+        }
+    }
+    add_equipment_production = {
+        equipment = {
+            type = battleship_1906 creator = "GER"
+        }
+    }
+    add_equipment_production = {
+        equipment = {
+            type = battleship_1906 creator = "GER"
+        }
+    }
+    add_equipment_production = {
+        equipment = {
+            type = battle_cruiser_1906 creator = "GER"
+        }
+    }
+    add_equipment_production = {
+        equipment = {
+            type = light_cruiser_1906 creator = "GER"
+        }
+    }
+    add_equipment_production = {
+        equipment = {
+            type = light_cruiser_1906 creator = "GER"
+        }
+    }
+    add_equipment_production = {
+        equipment = {
+            type = light_cruiser_1906 creator = "GER"
+        }
+    }
+}
