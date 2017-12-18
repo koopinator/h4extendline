@@ -43,8 +43,12 @@ set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=20 }
 add_ideas={ }
 set_national_unity=0.75
 set_convoys=50
-1914.1.1 = { oob="DDR_1914" }
-1914.1.1 = { set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=20 }  communism={ popularity=0  }  neutrality={ popularity=80 } }  ruling_party=neutrality last_election="1910.1.1" election_frequency=48 elections_allowed=no } }
+1914.1.1 = { oob="DDR_1920"
+
+declare_war_on = { target = GER type = annex_everything }
+
+ }
+1914.1.1 = { set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=0 }  communism={ popularity=100  }  neutrality={ popularity=0 } }  ruling_party=communism last_election="1910.1.1" election_frequency=48 elections_allowed=no } }
 1914.1.1 = { set_technology={ 
 		#KiS #Scout1=1
 		naval_bomber1=1

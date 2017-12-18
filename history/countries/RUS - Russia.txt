@@ -148,9 +148,11 @@ create_navy_leader={  name = "Aleksandr Rusin" id=77235 portrait_path="gfx/hoi4t
 }
 
 
-1914.1.1 = {
-	oob = "RUS_1914"
-
+1919.1.1 = {
+	oob = "RUS_Civil_War"
+	end_puppet = KHV
+	end_puppet = BUK
+	declare_war_on = { target = SOV type = annex_everything }
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
@@ -283,7 +285,7 @@ create_navy_leader={  name = "Aleksandr Rusin" id=77235 portrait_path="gfx/hoi4t
 
 	set_politics = {
 	    parties = {
-	        neutrality = {
+	        nationalist = {
 	            popularity = 75
 	        }
 	        democratic = {
@@ -296,7 +298,7 @@ create_navy_leader={  name = "Aleksandr Rusin" id=77235 portrait_path="gfx/hoi4t
 	            popularity = 10
 	        }
 	    }
-	    ruling_party = neutrality last_election = "1912.9.1"
+	    ruling_party = nationalist last_election = "1912.9.1"
 	    election_frequency = 60 elections_allowed = yes
 	}
 

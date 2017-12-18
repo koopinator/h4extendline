@@ -373,3 +373,8 @@ create_navy_leader={  name = "Tyrwhitt" id=28485 portrait_path="gfx/admiral/ENG_
 
 	set_country_flag = titanic
 }
+
+1919.1.1 = { 
+oob = "ENG_1920"
+
+}

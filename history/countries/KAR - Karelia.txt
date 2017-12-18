@@ -63,7 +63,9 @@ set_convoys = 20
 		# Industry
 	}
 
-	set_politics={  parties={ democratic={ popularity=80  }  neutrality={ popularity=10 }  communism={ popularity=10  } }  ruling_party=neutrality last_election="1910.1.15" election_frequency=60 elections_allowed=yes }
+	create_country_leader={ name="Vasili Sidorov" desc="" picture="gfx/leaders/KAR/KAR_Vasili_Sidorov.dds" ideology=liberalism traits={  } }
+
+	set_politics={  parties={ democratic={ popularity=80  }  neutrality={ popularity=10 }  communism={ popularity=10  } }  ruling_party=democratic last_election="1910.1.15" election_frequency=60 elections_allowed=yes }
 
 	add_ideas = {
 

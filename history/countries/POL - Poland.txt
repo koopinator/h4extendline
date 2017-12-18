@@ -40,7 +40,7 @@ set_technology={
 set_politics={  parties={ democratic={ popularity=18 }  fascism={ popularity=15 }  communism={ popularity=2 }  neutrality={ popularity=65 } }  ruling_party=neutrality last_election="1910.1.1" election_frequency=36 elections_allowed=no }
 set_national_unity=0.75
 set_convoys=10
-1914.1.1 = { oob="POL_1914" }
+1914.1.1 = { oob="POL_1915" }
 1914.1.1 = { set_politics={  parties={ democratic={ popularity=18 }  fascism={ popularity=15 }  communism={ popularity=2 }  neutrality={ popularity=65 } }  ruling_party=neutrality last_election="1910.1.1" election_frequency=36 elections_allowed=no } }
 1914.1.1 = { set_technology={ 
 		#KiS #Scout1=1
@@ -136,6 +136,11 @@ create_corps_commander={  name = "Puchalski" id=69091 portrait_path="gfx/general
 create_corps_commander={  name = "Rumsza, K." id=69101 portrait_path="gfx/generals/POL_rumsza__k.tga" traits={ winter_specialist commando } skill=2 }
 create_field_marshal={  name = "Smigly-Rydz" id=69007 portrait_path="gfx/fieldmarshal/POL_smigly_rydz.tga" traits={ defensive_doctrine old_guard } skill=1 }
 create_field_marshal={  name = "Pilsudski" id=69053 portrait_path="gfx/fieldmarshal/POL_pilsudski.tga" traits={ offensive_doctrine fast_planner } skill=4 }
+
+1919.1.1={
+oob = "POL_1915"
+declare_war_on = { target = GER type = annex_everything }
+}
 
 1936.1.1={ 
 capital=10

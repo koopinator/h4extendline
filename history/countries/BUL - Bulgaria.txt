@@ -125,11 +125,11 @@ create_navy_leader={  name = "Serafimov" id=12081 portrait_path="gfx/admiral/BUL
 	        communism = {
 	            popularity = 0
 	        }
-	        nationalist = {
+	        neutrality = {
 	            popularity = 80
 	        }
 	    }
-	    ruling_party = nationalist last_election = "1907.12.22"
+	    ruling_party = neutrality last_election = "1907.12.22"
 	    election_frequency = 48 elections_allowed = yes
 	}
 

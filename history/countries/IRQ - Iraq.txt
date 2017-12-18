@@ -109,7 +109,12 @@ set_convoys=5
 		tech_logistics_company=1
 		#KiS #tech_signal_company=1
 		} }
-create_country_leader={ name = "Percy Cox" desc=IRQ_percy_cox_DESC picture="gfx/leaders/IRQ_percy_cox.dds" expire="1935.1.1" ideology=moderatism traits={  } }
+1914.1.1 = { 
+oob="IRQ_1920" 
+create_country_leader={ name = "Mehdi Al-Khalissi" desc=IRQ_Mehdi_Khalissi_DESC picture="gfx/leaders/IRQ/Khalissi.dds" expire="1935.1.1" ideology=moderatism traits={  } }
+declare_war_on = { target = ENG type = annex_everything }
+}
+
 
 1936.1.1={ 
 capital=291
