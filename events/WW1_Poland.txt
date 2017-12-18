@@ -13,6 +13,7 @@ country_event = { #Germany is asked if they want to create a polish puppet state
 	
 	trigger = {
 		date < 1920.12.01
+		GER = { has_war_with = RUS }
 		tag = GER
 		RUS = { NOT = { controls_state = 10 } }
 		RUS = { NOT = { controls_state = 92 } }
@@ -58,4 +59,47 @@ country_event = { #Poland puppeted
 		
 	}
 	}
+
+country_event = { #Poland defeats germany during the 1919 uprising
+	id = ww1_poland.3
+	title = ww1_poland.3.t
+	desc = ww1_poland.3.d
+
+	fire_only_once = yes
+	trigger = {
+		date < 1930.12.01
+		GER = { has_war_with = POL }
+		tag = GER
+		surrender_progress > 0.2
+	}
+	
+	option = {	
+	name = ww1_poland.3.o1
+	white_peace = POL
+	POL = { transfer_state = 67 }
+	POL = { transfer_state = 86 }
+	POL = { transfer_state = 85 }
+	}
+
+}
+
+country_event = { #Germany defeats poland during the 1919 upurising
+	id = ww1_poland.4
+	title = ww1_poland.4.t
+	desc = ww1_poland.4.d
+
+	fire_only_once = yes
+	trigger = {
+		date < 1930.12.01
+		GER = { has_war_with = POL }
+		tag = POL
+		surrender_progress > 0.2
+	}
+	
+	option = {	
+	name = ww1_poland.4.o1
+	white_peace = GER
+	}
+
+}
 

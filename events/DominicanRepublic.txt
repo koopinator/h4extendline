@@ -14,6 +14,7 @@ country_event = { #The President is dead!
 	
 	trigger = {
 		date > 1911.11.01
+		date < 1912.8.4
 		tag = DOM
 		has_government = neutrality
 	}
@@ -136,6 +137,7 @@ country_event = { #United states invades Nicaragua
 	trigger = {
 		tag = USA
 		date > 1912.8.4
+		date < 1913.1.1
 		USA = { NOT = { has_war_with = GER }  }
 	}
 	
@@ -155,6 +157,7 @@ country_event = { #United states invades Haiti
 	trigger = {
 		tag = USA
 		date > 1915.7.28
+		date < 1916.8.4
 		USA = { NOT = { has_war_with = GER }  }
 	}
 	
@@ -174,6 +177,7 @@ country_event = { #United states invades Dominican Republic a second time.
 	trigger = {
 		tag = USA
 		date > 1916.5.5
+		date < 1917.5.5
 		USA = { NOT = { has_war_with = GER }  }
 	}
 	

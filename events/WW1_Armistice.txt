@@ -28,11 +28,14 @@ country_event = { #Germany surrenders
 		BAV  = { transfer_state = 54 }
 		BAV  = { transfer_state = 53 }
 		BAV  = { transfer_state = 52 }
-		DEN  = { transfer_state = 54 }
+		BAV  = { add_popularity = { ideology = communism popularity = 0.8 } }
+		BAV  = { set_politics = { ruling_party = communism elections_allowed = yes } }
+		DEN  = { transfer_state = 751 }
 		MEM  = { transfer_state = 188 }
 		end_puppet = POL
 		end_puppet = LIT
 		end_puppet = EST
+
 	}
 }
 
