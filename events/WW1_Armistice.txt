@@ -32,14 +32,17 @@ country_event = { #Germany surrenders
 		BAV  = { set_politics = { ruling_party = communism elections_allowed = yes } }
 		DEN  = { transfer_state = 751 }
 		MEM  = { transfer_state = 188 }
+		CZE = { transfer_state = 69 }
+		CZE = { transfer_state = 74 }
 		end_puppet = POL
 		end_puppet = LIT
 		end_puppet = EST
+		end_puppet = AUH
 
 	}
 }
 
-country_event = { #Austria-Hungary surrenders
+country_event = { #Austria-Hungary surrenders - Armistice of Villa Giusti
 	id = ww1_armistice.2
 	title = ww1_armistice.2.t
 	desc = ww1_armistice.2.d
@@ -56,11 +59,42 @@ country_event = { #Austria-Hungary surrenders
 	option = {	#The war is over
 		name = ww1_armistice.2.o1
 		AUH = {	annex_country = { target = AUH } }
-		SLV  = { transfer_state = 736 }
-		SLV  = { transfer_state = 102 }
-		SLV  = { transfer_state = 109 }
-		SLV  = { transfer_state = 103 }
-		SLV  = { transfer_state = 104 }
+		SLV  = { 
+		transfer_state = 736 
+		transfer_state = 102
+		transfer_state = 109
+		transfer_state = 103
+		transfer_state = 104
+		}
+		CZE = { 
+		transfer_state = 9
+		transfer_state = 75
+		transfer_state = 72
+		}
+		HUN = { 
+		transfer_state = 70
+		transfer_state = 664
+		transfer_state = 71
+		transfer_state = 73
+		transfer_state = 76
+		transfer_state = 154
+		transfer_state = 43
+		transfer_state = 155
+		transfer_state = 45
+		transfer_state = 84
+		transfer_state = 83
+		transfer_state = 45
+		}
+		RWK = { 
+		transfer_state = 88
+		transfer_state = 89
+		transfer_state = 91
+		}
+		GER = {
+		transfer_state = 69
+		transfer_state = 74
+		}
+
 	}
 }
 
