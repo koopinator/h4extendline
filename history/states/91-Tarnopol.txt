@@ -12,6 +12,10 @@ state={
 		owner=AUH
 		#add_core_of=POL
 		add_core_of=AUH
+		1919.1.1={ 
+			owner=RWK
+			add_core_of=RWK
+			}
 		1936.1.1={ 
 			owner=POL
 			#add_core_of=POL

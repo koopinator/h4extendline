@@ -13,6 +13,10 @@ state={
 		owner=AUH
 		add_core_of=ROM
 		add_core_of=AUH
+		1919.1.1={ 
+			owner=BNT
+			add_core_of=BNT
+			}
 		1936.1.1={ 
 			owner=ROM
 			add_core_of=ROM
