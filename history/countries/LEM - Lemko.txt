@@ -1,0 +1,16 @@
+﻿capital = 786
+
+#-------------------------------------------------------
+#					GENERIC VALUES
+#-------------------------------------------------------
+set_research_slots = 3
+set_national_unity = 0.75
+set_convoys = 5
+
+1910.1.1 = {
+
+create_country_leader={ name = "Jaroslav Kacmarcyk" desc=LEM_Kacmarcyk_DESC picture="gfx/leaders/LEM/LEM_Kacmarcyk.dds" expire="1925.1.1" ideology=despotism traits={  } }
+
+
+	set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=0 }  communism={ popularity=0 }  neutrality={ popularity=100 } }  ruling_party=neutrality last_election="1910.1.1" election_frequency=48 elections_allowed=yes }
+}

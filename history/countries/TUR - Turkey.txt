@@ -163,53 +163,11 @@ create_navy_leader={  name = "Arif Paşa" id=90097 portrait_path="gfx/hoi4tgw_po
 	}
 }
 
-1914.1.1 = {
-	oob = "TUR_1914"
-
-	#-------------------------------------------------------
-	#							NF
-	#-------------------------------------------------------
-	#Army
-	complete_national_focus = TUR_ww1_army_effort
-	complete_national_focus = TUR_ww1_equipment_effort
-	complete_national_focus = TUR_ww1_artillery_effort_1
-	complete_national_focus = TUR_ww1_doctrine_effort
-	complete_national_focus = TUR_ww1_trenchwarfare
-	
-	# Air
-	complete_national_focus = TUR_ww1_aviation_effort
-	complete_national_focus = TUR_ww1_aviation_effort_2
-	
-	# Industry
-	complete_national_focus = TUR_ww1_industrial_effort
-	complete_national_focus = TUR_ww1_infrastructure_effort
-	complete_national_focus = TUR_ww1_airfield_expansion_1
-	complete_national_focus = TUR_ww1_construction_effort
-	complete_national_focus = TUR_ww1_production_effort
-	complete_national_focus = TUR_ww1_dockyard_effort_1
-	
-	# Naval
-	complete_national_focus = TUR_ww1_naval_effort
-
-	#Political
-	complete_national_focus = TUR_ww1_political_effort
-	complete_national_focus = TUR_ww1_SupportYoungTurksReforms
-
-	#Diplomatic
-	complete_national_focus = TUR_ww1_diplomatic_effort
-	complete_national_focus = TUR_ww1_BalkansPolitics
-	complete_national_focus = TUR_ww1_anti_serb
-	unlock_national_focus = TUR_ww1_AntiBulgaria
-	unlock_national_focus = TUR_ww1_BalkanLeagueMenace
-	unlock_national_focus = TUR_ww1_SecondBalkanWarOpportunity
-	complete_national_focus = TUR_ww1_assert_position_west
-	complete_national_focus = TUR_ww1_anti_ita
-	complete_national_focus = TUR_ww1_anti_uk
-	complete_national_focus = TUR_ww1_anti_ru
-	complete_national_focus = TUR_ww1_assert_position_east
-	complete_national_focus = TUR_ww1_develop_arab
-	complete_national_focus = TUR_ww1_fight_arab_revolt
-	#-------------------------------------------------------
+1919.1.1 = {
+	oob = "TUR_1920"
+	declare_war_on = { target = GRE type = annex_everything }
+	declare_war_on = { target = ARM type = annex_everything }
+	declare_war_on = { target = FRA type = annex_everything }
 
 	set_technology = {
 
@@ -299,19 +257,19 @@ create_navy_leader={  name = "Arif Paşa" id=90097 portrait_path="gfx/hoi4tgw_po
 	set_politics = {
 	    parties = {
 	        democratic = {
-	            popularity = 20
+	            popularity = 70
 	        }
 	        fascism = {
-	            popularity = 5
+	            popularity = 30
 	        }
 	        communism = {
 	            popularity = 0
 	        }
 	        nationalist = {
-	            popularity = 75
+	            popularity = 0
 	        }
 	    }
-	    ruling_party = nationalist last_election = "1912.4.1"
+	    ruling_party = democratic last_election = "1912.4.1"
 	    election_frequency = 48 elections_allowed = yes
 	}
 
@@ -320,8 +278,5 @@ create_navy_leader={  name = "Arif Paşa" id=90097 portrait_path="gfx/hoi4tgw_po
 		limited_conscription
 		partial_economic_mobilisation
 		limited_exports
-		german_advisors
 	}
-
-	add_timed_idea = { idea = building_dreadnoughts days = 250 }
 }

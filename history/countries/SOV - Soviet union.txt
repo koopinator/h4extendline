@@ -120,7 +120,10 @@ create_navy_leader={  name = "Kireev" id=85075 portrait_path="gfx/admiral/SOV_ki
 1919.1.1 = {
 	oob = "SOV_civilwaroob"
 	declare_war_on = { target = RUS type = annex_everything }
-	declare_war_on = { target = RUS type = annex_everything }
+	declare_war_on = { target = KAR type = annex_everything }
+	declare_war_on = { target = BAS type = annex_everything }
+	declare_war_on = { target = GRN type = annex_everything }
+	declare_war_on = { target = MAK type = annex_everything }
 
 
 	#-------------------------------------------------------

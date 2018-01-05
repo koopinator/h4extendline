@@ -439,3 +439,9 @@ create_navy_leader={
 	set_global_flag = kis_start_1914
 
 }
+
+1919.1.1 = {
+	oob = "FRA_1920"
+	dismantle_faction = yes
+
+}

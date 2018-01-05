@@ -1,19 +1,19 @@
-﻿capital = 747
+﻿capital = 780
 
 #-------------------------------------------------------
 #					GENERIC VALUES
 #-------------------------------------------------------
 set_research_slots = 3
-set_national_unity = 0.50
-set_convoys = 0
+set_national_unity = 0.75
+set_convoys = 5
 
 #-------------------------------------------------------
 #					POLITICS & ARMY
 #-------------------------------------------------------
-create_country_leader={ name = "Muhammad ibn Ali al-Idrisi" desc=ASR_muhammad_ibn_ali_al_idrisi_DESC picture="gfx/leaders/ASR_muhammad_ibn_ali_al_idrisi.dds" expire="1935.1.1" ideology=despotism traits={  } }
+create_country_leader={ name = "Mahmud Barzanji" desc=KUR_Barzanji_DESC picture="gfx/leaders/KUR/KUR_Barzanji.dds" expire="1925.1.1" ideology=despotism  traits={  } }
 
 1910.1.1 = {
-	oob = "ASR_1910"
+	oob = "KUR_1910"
 
 	#-------------------------------------------------------
 	#							NF
@@ -65,38 +65,20 @@ create_country_leader={ name = "Muhammad ibn Ali al-Idrisi" desc=ASR_muhammad_ib
 		# Industry
 	}
 
-	set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=0 }  communism={ popularity=0  }  neutrality={ popularity=100 } }  ruling_party=neutrality last_election="1910.1.1" election_frequency=48 elections_allowed=no }
+	set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=0 }  communism={ popularity=0 }  neutrality={ popularity=100 } }  ruling_party=neutrality last_election="1910.1.1" election_frequency=48 elections_allowed=no }
 
-	add_ideas={ ww1_Faith_Allah }
+	add_ideas = {
+
+	}	
 }
 
-
-1914.1.1 = {
-	oob = "ASR_1914"
+1920.1.1 = {
+	oob = "KUR_1920"
 
 
 	#-------------------------------------------------------
 	#							NF
 	#-------------------------------------------------------
-
-	#Army
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = ww1_artillery_effort_1
-	complete_national_focus = doctrine_effort
-	complete_national_focus = ww1_trenchwarfare
-
-	#Industrial
-	complete_national_focus = industrial_effort
-	complete_national_focus = infrastructure_effort
-
-	#Political
-	complete_national_focus = political_effort
-
-	#Diplomatic
-	complete_national_focus = ww1_diplomatic_effort
-	complete_national_focus = neutrality_focus
-	complete_national_focus = ww1_military_reserve
 	
 
 	#-------------------------------------------------------
@@ -151,9 +133,9 @@ create_country_leader={ name = "Muhammad ibn Ali al-Idrisi" desc=ASR_muhammad_ib
 		# Industry
 	}
 
-	set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=0 }  communism={ popularity=0  }  neutrality={ popularity=100 } }  ruling_party=neutrality last_election="1910.1.1" election_frequency=48 elections_allowed=no } 
+	set_politics={  parties={ democratic={ popularity=0 }  fascism={ popularity=0 }  communism={ popularity=0 }  neutrality={ popularity=100 } }  ruling_party=neutrality last_election="1910.1.1" election_frequency=48 elections_allowed=no }
 
 	add_ideas = {
-		ww1_Faith_Allah
+
 	}
 }
