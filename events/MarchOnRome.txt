@@ -33,6 +33,7 @@ country_event = {
 			ideology = fascism
 			popularity = 0.70
 		}
+		news_event = { hours = 1 id = interwar_news.2 }
 	}
 
 	option = {
