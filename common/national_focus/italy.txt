@@ -2489,16 +2489,17 @@ focus_tree = {
 
 	################ INTERWAR START
 
-	# March on Rome
+	# March on Rome - Renamed to Italian Empire
 	focus = {
 		id = ITA_interwar_march_on_rome
 
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_support_fascism
 
 		available = {
 			date > 1921.10.10
 			has_war = no
 			is_puppet = no
+			has_government = fascism
 		}
 
 		x = 8
@@ -2520,7 +2521,6 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			news_event = { hours = 1 id = interwar_news.2 }
 		}
 	}
 
