@@ -11,6 +11,11 @@ state={
 		owner = TUR
 		add_core_of = IRQ
 		add_core_of = TUR
+		1920.1.1 = {
+			owner = KUR
+			add_core_of = KUR
+
+		}
 		1936.1.1 = {
 			owner = IRQ
 			add_core_of = IRQ
