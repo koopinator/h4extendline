@@ -1,0 +1,29 @@
+state={
+	id=785
+	name="STATE_785"
+	provinces={
+		9425 
+	}
+	state_category=city
+
+	history={
+		owner = AUH
+		add_core_of = AUH
+		victory_points = {
+        9425 4 
+        }
+		1919.1.1 = {
+			owner = KOM
+			add_core_of = KOM
+
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	manpower=390000
+	buildings_max_level_factor=1.000
+}

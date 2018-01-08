@@ -95,6 +95,27 @@ country_event = { #Austria-Hungary surrenders - Armistice of Villa Giusti
 		transfer_state = 74
 		}
 
+<<<<<<< HEAD
+=======
+		RWK = {
+		transfer_state = 88
+		transfer_state = 89
+		transfer_state = 91
+		}
+
+		BNT = {
+		transfer_state = 82
+		}
+
+		KOM = {
+		transfer_state = 785
+		}
+
+		LEM = {
+		transfer_state = 786
+		}
+
+>>>>>>> a499bfbaeb4ff49820977036fb74d032724b5f8c
 	}
 }
 
@@ -115,6 +136,10 @@ country_event = { #Ottoman Empire surrenders - Make sure they abide by the treat
 	option = {	#The war is over
 		name = ww1_armistice.3.o1
 		TUR = {	annex_country = { target = TUR } }
+		GRE = {
+		transfer_state = 339
+		}
+		340 = { set_demilitarized_zone = yes }
 		#Todo: Add states to be transferred
 	}
 }
@@ -135,7 +160,7 @@ country_event = { #Bulgaria surrenders
 	
 	option = {	#The war is over
 		name = ww1_armistice.4.o1
-		TUR = {	annex_country = { target = TUR } }
+		BUL = {	annex_country = { target = BUL } }
 		#Todo: Add states to be transferred
 	}
 }

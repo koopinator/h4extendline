@@ -472,3 +472,10 @@
  RWK_democratic_party:0 "National Democratic Party"
  RWK_neutrality_party:0 "Christian Social Party"
  RWK_communism_party:0 "Radical Party"
+<<<<<<< HEAD
+=======
+ NGL_neutrality_party:0 "Greenlandic Trade Department"
+ NGL_neutrality_party_long:0 "Royal Greenland Trading Department"
+ NGL_democratic_party:0 "Danish Faction"
+ NGL_nationalist_party:0 "Inuit Faction"
+>>>>>>> a499bfbaeb4ff49820977036fb74d032724b5f8c

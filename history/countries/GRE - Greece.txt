@@ -216,23 +216,27 @@ create_navy_leader={  name = "Hatzikiriakos" id=35033 portrait_path="gfx/admiral
 	set_politics = {
 	    parties = {
 	        democratic = {
-	            popularity = 90
+	            popularity = 50
 	        }
 	        fascism = {
-	            popularity = 5
-	        }
-	        communism = {
-	            popularity = 5
-	        }
-	        neutrality = {
 	            popularity = 0
 	        }
+	        communism = {
+	            popularity = 0
+	        }
+	        neutrality = {
+	            popularity = 50
+	        }
 	    }
-	    ruling_party = democratic last_election = "1911.5.28"
+	    ruling_party = neutrality last_election = "1911.5.28"
 	    election_frequency = 48 elections_allowed = yes
 	}
 
 	add_ideas = {
 		limited_conscription
 	}
+}
+
+1919.1.1 = { 
+oob = "GRE_1920"
 }

@@ -21,6 +21,7 @@ create_navy_leader={  name = "Juel-Brockdorff" id=25007 portrait_path="gfx/admir
 
 1910.1.1 = {
 	oob = "DEN_1910"
+	puppet = NGL
 
 	#-------------------------------------------------------
 	#							NF

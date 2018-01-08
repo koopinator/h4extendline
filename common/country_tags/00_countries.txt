@@ -165,4 +165,12 @@ BAS = "countries/Basmachi.txt"
 SLV = "countries/Slovenia.txt"
 RIF = "countries/Rif.txt"
 RWK = "countries/WestUkraine.txt"
+<<<<<<< HEAD
 BNT = "countries/Banat.txt"
+=======
+BNT = "countries/Banat.txt"
+KUR = "countries/Kurdistan.txt"
+KOM = "countries/Komancza.txt"
+LEM = "countries/Lemko.txt"
+NGL = "countries/NorthGreenland.txt"
+>>>>>>> a499bfbaeb4ff49820977036fb74d032724b5f8c

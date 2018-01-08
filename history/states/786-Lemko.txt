@@ -1,0 +1,29 @@
+state={
+	id=786
+	name="STATE_786"
+	provinces={
+		417 
+	}
+	state_category=city
+
+	history={
+		owner = AUH
+		add_core_of = AUH
+		victory_points = {
+        417 4 
+        }
+		1919.1.1 = {
+			owner = LEM
+			add_core_of = LEM
+
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	manpower=390000
+	buildings_max_level_factor=1.000
+}

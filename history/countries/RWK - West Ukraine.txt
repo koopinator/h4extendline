@@ -14,7 +14,11 @@ create_country_leader={ name="Yevhen Petrushevych" desc=RWK_Petrushevych_DESC pi
 create_country_leader={ name="Oleksander Barvinsky" desc=RWK_Barvinsky_DESC picture="gfx/leaders/RWK/RWK_Petrushevych.dds" expire="1926.1.1" ideology=centrism traits={  } }
 
 1910.1.1 = {
+<<<<<<< HEAD
 	oob = "RWK_1910"
+=======
+	oob = "RWK_1920"
+>>>>>>> a499bfbaeb4ff49820977036fb74d032724b5f8c
 
 	#-------------------------------------------------------
 	#							NF
@@ -74,7 +78,11 @@ create_country_leader={ name="Oleksander Barvinsky" desc=RWK_Barvinsky_DESC pict
 }
 
 1914.1.1 = {
+<<<<<<< HEAD
 	oob = "RWK_1914"
+=======
+	oob = "RWK_1920"
+>>>>>>> a499bfbaeb4ff49820977036fb74d032724b5f8c
 
 
 	#-------------------------------------------------------

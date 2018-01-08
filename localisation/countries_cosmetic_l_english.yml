@@ -362,4 +362,7 @@
  MDV_SOV_communism_autonomy_puppet:0 "Moldovan SSR"
  MEM_LIT:0 "Klaipeda"
  MEM_LIT_ADJ:0 "Klaipedan"
+ NGL_DEN:0 "North Greenland"
+ NGL_DEN_DEF:0 "North Greenland"
+ NGL_DEN_ADJ:0 "North Greenlandic"
  

@@ -1733,3 +1733,23 @@
  ww1_russoturkish.5.o1:0 "Join the central powers!"
  ww1_russoturkish.5.o2:0 "Maybe later."
 
+ #North Greenland Annexation of 1911
+
+ northgreenland.1.t:0 "North Greenland Annexation proposal"
+ northgreenland.1.d:0 "North Greenland, Currently under the administration of the Royal Greenland Trading Department, Is a subject of contention among our elites. Some have proposed that we abolish this old trading company, And nationalize north greenland. Others have suggested that we keep north greenland as a territory of the markets."
+ northgreenland.1.o1:0 "Seems like a good idea."
+ northgreenland.1.o2:0 "The Status Quo is acceptable."
+ northgreenland.2.t:0 "Denmark elects to annex north greenland"
+ northgreenland.2.d:0 "After centuries of the Royal Greenland Trading Department ruling North Greenland, Denmark has finally elected to nationalize North Greenland. [Root.GetLeader]'s business is to be abolished. They expect us to leave within the next 30 days."
+ northgreenland.2.o1:0 "Denmark has made an acceptable decision"
+ northgreenland.2.o2:0 "No! We must protect our business interests!"
+ northgreenland.2.o3:0 "No! We must protect the inuit!"
+ northgreenland.3.t:0 "North Greenland refuses to be annexed"
+ northgreenland.3.d:0 "It appears that the Leader of North Greenland appears to have little interests in our decision. They have seceded from denmark, Citing a need to protect their business interests. Most members of the danish parliament agree that takeover by force is the only option."
+ northgreenland.3.o1:0 "The war has begun"
+ northgreenland.4.t:0 "The Inuit rise up!"
+ northgreenland.4.d:0 "In one of the most dramatic turns in Danish history, The North Greenlandic Government has been deposed by a group of furious Inuit. The Inuit believe that the annexation of North greenland is the last straw in centuries of infringements into inuit territory. They've raised a small army out of Inuit militias, Ready to protect their territories. Some danes have suggested that we let the Inuit remain independent, As they don't control very valuable territory. Others have stressed that denmark must continue to preserve danish territory after the loss of territory in the Second Schleswig War."
+ northgreenland.4.o1:0 "We choose war!"
+ northgreenland.4.o2:0 "Let the Inuit be."
+
+

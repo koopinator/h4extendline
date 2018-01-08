@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 
 
 graphical_culture = eastern_european_gfx
 graphical_culture_2d = eastern_european_2d
 
+=======
+
+
+graphical_culture = eastern_european_gfx
+graphical_culture_2d = eastern_european_2d
+
+>>>>>>> a499bfbaeb4ff49820977036fb74d032724b5f8c
 color = { 22 32 96 }
