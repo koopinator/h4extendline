@@ -70,7 +70,7 @@ country_event = { #Poland defeats germany during the 1919 uprising
 		date < 1930.12.01
 		GER = { has_war_with = POL }
 		tag = GER
-		surrender_progress > 0.2
+		surrender_progress > 0.15
 	}
 	
 	option = {	
@@ -93,7 +93,7 @@ country_event = { #Germany defeats poland during the 1919 upurising
 		date < 1930.12.01
 		GER = { has_war_with = POL }
 		tag = POL
-		surrender_progress > 0.2
+		surrender_progress > 0.15
 	}
 	
 	option = {	

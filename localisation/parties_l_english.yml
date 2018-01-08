@@ -469,3 +469,6 @@
  MEM_neutrality_party:0 "Agricultural Party"
  MEM_democratic_party:0 "Social Democrats"
  MEM_democratic_party_long:0 "Social Democratic Party of the Memel Territory"
+ RWK_democratic_party:0 "National Democratic Party"
+ RWK_neutrality_party:0 "Christian Social Party"
+ RWK_communism_party:0 "Radical Party"
