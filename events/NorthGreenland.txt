@@ -1,0 +1,99 @@
+﻿###########################
+# Persian Events
+###########################
+
+add_namespace = northgreenland
+
+country_event = { #Denmark is asked wether or not to annex northern greenland
+	id = northgreenland.1
+	title = northgreenland.1.t
+	desc = northgreenland.1.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1911.01.01
+		date < 1911.12.01
+		tag = DEN
+	}
+	
+	option = {	#Seems like a good idea.
+		name = northgreenland.1.o1
+		NGL = { country_event = { days = 1 id = northgreenland.2 } }
+		ai_chance = { factor = 95 }
+	}
+	option = {	#The status quo is fine.
+		name = northgreenland.1.o2
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { #North Greenland is informed about denmark's decision.
+	id = northgreenland.2
+	title = northgreenland.2.t
+	desc = northgreenland.2.d
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = NGL
+	}
+	
+	option = {	#Denmark made an acceptable decision
+		name = northgreenland.2.o1
+		DEN = { annex_country = { target = NGL } }
+		ai_chance = { factor = 80 }
+	}
+	option = {	#No, We must protect our finance.
+		name = northgreenland.2.o2
+		end_puppet = NGL
+		DEN = { country_event = { days = 1 id = northgreenland.3 } }
+		ai_chance = { factor = 10 }
+	}
+	option = {	#No, We must protect the inuit.
+		name = northgreenland.2.o3
+		end_puppet = NGL
+		add_popularity = { ideology = nationalist popularity = 0.3 }
+		set_politics = { ruling_party = nationalist elections_allowed = no }
+		load_oob = NGL_Revolt
+		DEN = { country_event = { days = 1 id = northgreenland.4 } }
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = { #Denmark is informed of a financial inspired coup
+	id = northgreenland.3
+	title = northgreenland.3.t
+	desc = northgreenland.3.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = DEN
+	}
+	
+	option = {	#The war has begun
+		name = northgreenland.3.o1
+		declare_war_on = { target = NGL }
+	}
+}
+
+country_event = { #Denmark is informed of a inuit inspired coup
+	id = northgreenland.4
+	title = northgreenland.4.t
+	desc = northgreenland.4.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = DEN
+	}
+	
+	option = {	#The war has begun
+		name = northgreenland.4.o1
+		declare_war_on = { target = NGL }
+	}
+	option = {	#Let them
+		name = northgreenland.4.o1
+	}
+}
